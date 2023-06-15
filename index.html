@@ -2,371 +2,426 @@
 <html lang="en">
 
 <head>
-  <title>KEYDESIGN</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-  <meta name="description"
-    content="Keydesign helps businesses succeed by delivering world-class industrial design and product development solutions">
-  <meta name="keywords" content="industrial design, creative, design, consulting, award">
-  <script async src="https://www.google-analytics.com/analytics.js"></script>
-  <script>
-    window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
-    ga.l = +new Date();
-    ga('create', 'UA-106413917-1', 'auto');
-    ga('send', 'pageview');
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Geneva, Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 8pt 14pt;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-link {
+            font-size: 11pt;
+            font-weight: normal;
+            text-decoration: none;
+            color: #5e5e5e;
+            margin-left: 35pt;
+        }
+
+        .nav-link.active {
+            color: #c2274b;
+        }
+
+        .wrapper {
+            display: grid;
+            gap: 8pt;
+            padding: 0 8pt;
+        }
+
+        @media screen and (max-width: 599px) {
+
+            /* 1 item per row for mobile */
+            .wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media screen and (min-width: 600px) and (max-width: 1023px) {
+
+            /* 1 item per row for vertical tablet */
+            .wrapper {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+
+            /* 3 items per row for laptop / desktop */
+            .wrapper {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .section {
+            scroll-margin-top: 35.4pt;
+            padding: 0 6pt;
+            background-color: #ffffff;
+        }
+
+        .statement {
+            padding: 49pt 57pt;
+            background-color: #ffffff;
+        }
+
+        .item {
+            aspect-ratio: 1.618;
+            background-color: #e0e0e0;
+        }
+
+        .footer {
+            background-color: #5e5e5e;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            display: flex;
+            justify-content: space-between;
+            padding: 35pt 57pt;
+        }
+
+        .footer-text {
+            font-size: 19pt;
+            font-weight: normal;
+        }
+
+        .footer-link {
+            font-size: 14pt;
+            font-weight: normal;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .zoom-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .zoom-container:hover .zoom-image {
+            transform: scale(1.05);
+            transition: transform 0.6s;
+        }
+
+        .zoom-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform 0.6s;
+        }
+
+        .caption {
+            position: absolute;
+            top: 8pt;
+            left: 8pt;
+            color: #000;
+            opacity: 0;
+            transition: opacity 0.6s;
+        }
+
+        .zoom-container:hover .caption {
+            opacity: 1;
+        }
+    </style>
 </head>
 
 <body>
-  <div class="banner">
-    <a href="http://keydesign.com/"><img src="images/keydesign_logo.png" alt="KEYDESIGN"></a>
-    <div class="right hide-small">
-      <a href="#work">WORK</a>
-      <a href="#services">SERVICES</a>
-      <a href="#contact">CONTACT</a>
-    </div>
-  </div>
-
-  <div class="KD-content padding">
-    <div class="title" id="mission"></div>
-
-    <div class="padding">
-      <div style="max-width:800px;">
-        <br>
-        <h1>Helping our clients succeed by creating innovative and beautiful products that consumers love</h1>
-        <br>
-        <br>
-      </div>
+    <div class="navbar">
+        <a href="#"
+            style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 19.4pt; font-weight: 700; text-decoration: none; color: #000;">KEYDESIGN</a>
+        <div class="links">
+            <a href="#work" class="nav-link">WORK</a>
+            <a href="#ideas" class="nav-link">IDEAS</a>
+            <a href="#services" class="nav-link">SERVICES</a>
+            <a href="#about" class="nav-link">ABOUT</a>
+            <a href="#contact" class="nav-link">CONTACT</a>
+        </div>
     </div>
 
-
-    <div class="title" id="work">
-      <h3>CLIENT WORK</h3>
+    <div style="margin-top: 35.4pt;">
+        <div id="statement" class="section statement">
+            <p style="font-size: 19pt; color: #5e5e5e;">
+                Helping clients succeed by creating
+                <br>
+                innovative, beautiful, and user-centric
+                <br>
+                industrial design.
+            </p>
+        </div>
+        <div id="work" class="section">
+            <div class="wrapper">
+                <a href="projects/fivestars">
+                    <div class="item zoom-container">
+                        <img src="projects/fivestars/images/main.jpg" alt="Fivestars" class="zoom-image">
+                        <div class="caption">Point of Service Display</div>
+                    </div>
+                </a>
+                <a href="projects/starburst">
+                    <div class="item zoom-container">
+                        <img src="projects/starburst/images/main.gif" alt="Case Starburst" class="zoom-image">
+                        <div class="caption">Starburst Case</div>
+                    </div>
+                </a>
+                <a href="projects/natures_cooling_solutions">
+                    <div class="item zoom-container">
+                        <img src="projects/natures_cooling_solutions/images/main.gif" alt="Nature's Cooling Solutions"
+                            class="zoom-image">
+                        <div class="caption">Fresh-Air Thermometer</div>
+                    </div>
+                </a>
+                <a href="projects/patchworks">
+                    <div class="item zoom-container">
+                        <img src="projects/patchworks/images/main.jpg" alt="Patchworks Level Wallet Case"
+                            class="zoom-image">
+                        <div class="caption">Wallet Case</div>
+                    </div>
+                </a>
+                <a href="projects/optari">
+                    <div class="item zoom-container">
+                        <img src="projects/optari/images/main.jpg" alt="Optari" class="zoom-image">
+                        <div class="caption">Fashion Handbags</div>
+                    </div>
+                </a>
+                <a href="projects/hartmann">
+                    <div class="item zoom-container">
+                        <img src="projects/hartmann/images/main.jpg" alt="Hartmann" class="zoom-image">
+                        <div class="caption">Hartmann Luggage</div>
+                    </div>
+                </a>
+                <a href="projects/neotop">
+                    <div class="item zoom-container">
+                        <img src="projects/neotop/images/main.jpg" alt="Neotop" class="zoom-image">
+                        <div class="caption">Formula Dispenser</div>
+                    </div>
+                </a>
+                <a href="projects/active_angel">
+                    <div class="item zoom-container">
+                        <img src="projects/active_angel/images/main.jpg" alt="ActivAngel" class="zoom-image">
+                        <div class="caption">Wireless Thermometer</div>
+                    </div>
+                </a>
+                <a href="projects/somnarus">
+                    <div class="item zoom-container">
+                        <img src="projects/somnarus/images/main.jpg" alt="Somnarus" class="zoom-image">
+                        <div class="caption">Sleep Apnea Monitor</div>
+                    </div>
+                </a>
+                <a href="projects/case_rugged">
+                    <div class="item zoom-container">
+                        <img src="projects/case_rugged/images/main.jpg" alt="Case Rugged Triangles" class="zoom-image">
+                        <div class="caption">Rugged Case</div>
+                    </div>
+                </a>
+                <a href="projects/apple_tv_case">
+                    <div class="item zoom-container">
+                        <img src="projects/apple_tv_case/images/main.jpg" alt="Apple TV Remote Case" class="zoom-image">
+                        <div class="caption">Apple TV Remote Case</div>
+                    </div>
+                </a>
+                <a href="projects/caesium">
+                    <div class="item zoom-container">
+                        <img src="projects/caesium/images/main.jpg" alt="Cesium Rugged iPad Case" class="zoom-image">
+                        <div class="caption">Rugged EDU Case</div>
+                    </div>
+                </a>
+                <a href="projects/flower_flashlight">
+                    <div class="item zoom-container">
+                        <img src="projects/flower_flashlight/images/main.jpg" alt="Flower Flashlight"
+                            class="zoom-image">
+                        <div class="caption">Flower Flashlight</div>
+                    </div>
+                </a>
+                <a href="projects/outdoor_solar_lamp">
+                    <div class="item zoom-container">
+                        <img src="projects/outdoor_solar_lamp/images/main.jpg" alt="Outdoor Solar Lamp"
+                            class="zoom-image">
+                        <div class="caption">Morphing Solar Lamp</div>
+                    </div>
+                </a>
+                <a href="projects/Flexi_Lamp">
+                    <div class="item zoom-container">
+                        <img src="projects/flexi_lamp/images/main.jpg" alt="Flexi Lamp" class="zoom-image">
+                        <div class="caption">Flexible Solar Lamp</div>
+                    </div>
+                </a>
+                <a href="projects/trends">
+                    <div class="item zoom-container">
+                        <img src="projects/trends/images/main.jpg" alt="Trend Research" class="zoom-image">
+                        <div class="caption">Trend Research</div>
+                    </div>
+                </a>
+                <a href="projects/zuslab">
+                    <div class="item zoom-container">
+                        <img src="projects/zuslab/images/main.jpg" alt="Zuslab" class="zoom-image">
+                        <div class="caption">Armor Shield Case</div>
+                    </div>
+                </a>
+                <a href="projects/samsung_cases">
+                    <div class="item zoom-container">
+                        <img src="projects/samsung_cases/images/main.jpg" alt="Samsung Cases" class="zoom-image">
+                        <div class="caption">Fashion Cases Samsung</div>
+                    </div>
+                </a>
+                <a href="projects/iphone_cases">
+                    <div class="item zoom-container">
+                        <img src="projects/iphone_cases/images/main.jpg" alt="iPhone Cases" class="zoom-image">
+                        <div class="caption">Fashion Cases iPhone</div>
+                    </div>
+                </a>
+                <a href="projects/tovbot">
+                    <div class="item zoom-container">
+                        <img src="projects/tovbot/images/main.gif" alt="Tovbot" class="zoom-image">
+                        <div class="caption">Social Connected Robot</div>
+                    </div>
+                </a>
+                <a href="projects/ge">
+                    <div class="item zoom-container">
+                        <img src="projects/ge/images/main.jpg" alt="GE" class="zoom-image">
+                        <div class="caption">Wireless Applience Pager</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="ideas" class="section" style="padding-top: 22pt;">
+            <div class="wrapper">
+                <div class="flex-item flex-item-3">
+                    <a href="projects/glass_packaging">
+                        <div class="item zoom-container">
+                            <img src="projects/glass_packaging/images/main.jpg" alt="Wine Glass Packaging"
+                                class="zoom-image">
+                            <div class="caption">Wine Glass Packaging</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex-item flex-item-3">
+                    <a href="projects/3d_chocolate_pen/">
+                        <div class="item zoom-container">
+                            <img src="projects/3d_chocolate_pen/images/main.jpg" alt="3D Chocolate Pen"
+                                class="zoom-image">
+                            <div class="caption">3D Chocolate Pen</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex-item flex-item-3">
+                    <a href="projects/chess">
+                        <div class="item zoom-container">
+                            <img src="projects/chess/images/main.jpg" alt="Chocolate Chess" class="zoom-image">
+                            <div class="caption">Chocolate Chess</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex-item flex-item-3">
+                    <a href="projects/color_me_healthy">
+                        <div class="item zoom-container">
+                            <img src="projects/color_me_healthy/images/main.jpg" alt="Color Me Healthy"
+                                class="zoom-image">
+                            <div class="caption">Color Me Healthy</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex-item flex-item-3">
+                    <a href="projects/chair/">
+                        <div class="item zoom-container">
+                            <img src="projects/chair/images/main.jpg" alt="Wave Chair" class="zoom-image">
+                            <div class="caption">Wave Chair</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex-item flex-item-3">
+                    <a href="projects/frother">
+                        <div class="item zoom-container">
+                            <img src="projects/frother/images/main.jpg" alt="Milk Frother" class="zoom-image">
+                            <div class="caption">Milk Frother</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="clients" class="section" style="height: 200pt;">
+            <div style="width: 100%; height: 100%; background-color: #fafafa;">
+                <img src="http://www.keydesign.com/images/logo_clients.png" alt="client logos" style="width:100%">
+            </div>
+        </div>
+        <div id="contact" style="height: 184pt;"></div>
+    </div>
+    <div class="footer">
+        <div>
+            <span class="footer-text">Planning a new product?<br>Let's talk.</span>
+            <div style="height: 35pt;"></div>
+            <a class="footer-link" href="mailto:hello@keydesign.com">Hello@keydesign.com</a>
+        </div>
+        <div style="display: flex; flex-direction: column; row-gap: 22pt;">
+            <a href="#" class="footer-link">Instagram</a>
+            <a href="#" class="footer-link">LinkedIn</a>
+        </div>
     </div>
 
-    <div class="flex-container">
-      <div class="flex-item flex-item-3">
-        <a href="projects/fivestars"><img src="projects/fivestars/images/main.jpg" alt="Fivestars">
-          <div class="caption">
-            <p class="title">POS Display</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-      <div class="flex-item flex-item-3">
-        <a href="projects/starburst"><img src="projects/starburst/images/main.gif" alt="Case Starburst">
-          <div class="caption">
-            <p class="title">Starburst Case</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-      <div class="flex-item flex-item-3">
-        <a href="projects/natures_cooling_solutions"><img src="projects/natures_cooling_solutions/images/main.gif"
-            alt="Nature's Cooling Solutions">
-          <div class="caption">
-            <p class="title">Fresh-Air Thermometer</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-      <div class="flex-item flex-item-3">
-        <a href="projects/patchworks"><img src="projects/patchworks/images/main.jpg" alt="Patchworks Level Wallet Case">
-          <div class="caption">
-            <p class="title">Wallet Case</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-      <div class="flex-item flex-item-3">
-        <a href="projects/optari"><img src="projects/optari/images/main.jpg" alt="Optari">
-          <div class="caption">
-            <p class="title">Fashion Handbags</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-      <div class="flex-item flex-item-3">
-        <a href="projects/hartmann"><img src="projects/hartmann/images/main.jpg" alt="Hartmann">
-          <div class="caption">
-            <p class="title">Hartmann Luggage</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-      <div class="flex-item flex-item-3">
-        <a href="projects/neotop"><img src="projects/neotop/images/main.jpg" alt="Neotop">
-          <div class="caption">
-            <p class="title">Formula Dispenser</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-      <div class="flex-item flex-item-3">
-        <a href="projects/active_angel"><img src="projects/active_angel/images/main.jpg" alt="ActivAngel">
-          <div class="caption">
-            <p class="title">Wireless Thermometer</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-      <div class="flex-item flex-item-3">
-        <a href="projects/somnarus"><img src="projects/somnarus/images/main.jpg" alt="Somnarus">
-          <div class="caption">
-            <p class="title">Sleep Apnea Monitor</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-      <div class="flex-item flex-item-3">
-        <a href="projects/case_rugged"><img src="projects/case_rugged/images/main.jpg" alt="Case Rugged Triangles">
-          <div class="caption">
-            <p class="title">Rugged Case</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-      <div class="flex-item flex-item-3">
-        <a href="projects/apple_tv_case"><img src="projects/apple_tv_case/images/main.jpg" alt="Apple TV Remote Case">
-          <div class="caption">
-            <p class="title">Apple TV Remote Case</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-      <div class="flex-item flex-item-3">
-        <a href="projects/caesium"><img src="projects/caesium/images/main.jpg" alt="Cesium Rugged iPad Case">
-          <div class="caption">
-            <p class="title">Rugged EDU Case</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-      <div class="flex-item flex-item-3">
-        <a href="projects/flower_flashlight"><img src="projects/flower_flashlight/images/main.jpg"
-            alt="Flower Flashlight">
-          <div class="caption">
-            <p class="title">Flower Flashlight</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-      <div class="flex-item flex-item-3">
-        <a href="projects/outdoor_solar_lamp"><img src="projects/outdoor_solar_lamp/images/main.jpg"
-            alt="Outdoor Solar Lamp">
-          <div class="caption">
-            <p class="title">Morphing Solar Lamp</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-      <div class="flex-item flex-item-3">
-        <a href="projects/Flexi_Lamp"><img src="projects/flexi_lamp/images/main.jpg" alt="Flexi Lamp">
-          <div class="caption">
-            <p class="title">Flexible Solar Lamp</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-      <div class="flex-item flex-item-3">
-        <a href=" projects/trends"><img src="projects/trends/images/main.jpg" alt="Trend Research">
-          <div class="caption">
-            <p class="title">Trend Research</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-      <div class="flex-item flex-item-3">
-        <a href="projects/zuslab"><img src="projects/zuslab/images/main.jpg" alt="Zuslab">
-          <div class="caption">
-            <p class="title">Armor Shield Case</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-      <div class="flex-item flex-item-3">
-        <a href="projects/samsung_cases"><img src="projects/samsung_cases/images/main.jpg" alt="Samsung Cases">
-          <div class="caption">
-            <p class="title">Fashion Cases Samsung</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-      <div class="flex-item flex-item-3">
-        <a href="projects/iphone_cases"><img src="projects/iphone_cases/images/main.jpg" alt="iPhone Cases">
-          <div class="caption">
-            <p class="title">Fashion Cases iPhone</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-      <div class="flex-item flex-item-3">
-        <a href="projects/tovbot"><img src="projects/tovbot/images/main.gif" alt="Tovbot">
-          <div class="caption">
-            <p class="title">Social Connected Robot</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-      <div class="flex-item flex-item-3">
-        <a href="projects/ge"><img src="projects/ge/images/main.jpg" alt="GE">
-          <div class="caption">
-            <p class="title">Wireless Applience Pager</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll(".nav-link");
+            const sectionMap = {};
 
-    <div class="title" id="work">
-      <h3>CONCEPT WORK</h3>
-    </div>
+            // Loop through each navlink
+            navLinks.forEach(function (navLink) {
+                const href = navLink.getAttribute("href");
 
-    <div class="flex-container">
-      <div class="flex-item flex-item-3">
-        <a href="projects/glass_packaging"><img src="projects/glass_packaging/images/main.jpg">
-          <div class="caption">
-            <p class="title">Wine Glass Packaging</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-      <div class="flex-item flex-item-3">
-        <a href="projects/3d_chocolate_pen/"><img src="projects/3d_chocolate_pen/images/main.jpg"
-            alt="3D Chocolate Pen">
-          <div class="caption">
-            <p class="title">3D Chocolate Pen</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-      <div class="flex-item flex-item-3">
-        <a href="projects/chess"><img src="projects/chess/images/main.jpg" alt="Chocolate Chess">
-          <div class="caption">
-            <p class="title">Chocolate Chess</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-      <div class="flex-item flex-item-3">
-        <a href="projects/color_me_healthy"><img src="projects/color_me_healthy/images/main.jpg" alt="Color Me Healthy">
-          <div class="caption">
-            <p class="title">Color Me Healthy</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-      <div class="flex-item flex-item-3">
-        <a href="projects/chair/"><img src="projects/chair/images/main.jpg" alt="Wave Chair">
-          <div class="caption">
-            <p class="title">Wave Chair</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-      <div class="flex-item flex-item-3">
-        <a href="projects/frother"><img src="projects/frother/images/main.jpg" alt="Milk Frother">
-          <div class="caption">
-            <p class="title">Milk Frother</p>
-            <p class="action">Click Here</p>
-          </div>
-        </a>
-      </div>
-    </div>
+                // Check if the href is a relative link (starts with '#')
+                if (href && href.startsWith("#")) {
+                    const section = document.getElementById(href.slice(1));
 
-    <div class="divider"></div>
-    <div class="title" id="clients">
-      <h3>CLIENTS</h3>
-    </div>
+                    // Add the mapping between the navlink and section only if the section exists
+                    if (section) {
+                        sectionMap[navLink] = section;
+                    }
+                }
+            });
 
-    <div class="row-padding grayscale">
-      <div class="margin-bottom">
-        <img src="http://www.keydesign.com/images/logo_clients.png" alt="client logos" style="width:100%">
-      </div>
-    </div>
+            function revealSection() {
+                navLinks.forEach(function (link, index) {
+                    const section = sectionMap[link];
+                    if (section) {
+                        const sectionTop = section.offsetTop;
+                        const sectionHeight = section.offsetHeight;
+                        const revealPoint = window.innerHeight - sectionHeight / 2;
 
-    <div class="divider"></div>
-    <div class="title" id="services">
-      <h3>SERVICES</h3>
-    </div>
+                        if (window.pageYOffset > sectionTop - revealPoint) {
+                            navLinks.forEach(function (link) {
+                                link.classList.remove("active");
+                            });
+                            navLinks[index].classList.add("active");
+                        }
+                    }
+                });
+            }
 
-    <div class="flex-container">
-      <div class="flex-item flex-item-4">
-        <h3 style="color: #000099;"><b>1. Understand</b></h3>
-        Our services are defined in Phases of work. The first is an analytical phase where we collect the information
-        and empathize to fully understand the client, the user and the product's market position. By the end of this
-        phase we define the opportunities to solve and the goals to accomplish.
-        <p>Services</p>
-        <ul class="list">
-          <li>collecting and analyzing data to discover opportunities; internet and market research, interviewing,
-            observation</li>
-          <li>communicate opportunities and goals to the client</li>
-        </ul>
-      </div>
-      <div class="flex-item flex-item-4">
-        <h3 style="color: #33CC00;"><b>2. Create</b></h3>
-        Next, we ideate, innovate and solve problems. This creative and intuitive phase is well grounded in the
-        knowledge and goals from the first phase. In this phase, we start with rough and fast prototypes to solve
-        problems and finish with multiple concepts for the client to choose from.
-        <p>Services</p>
-        <ul class="list">
-          <li>problem solving sketching and physical models to quickly find and test solutions</li>
-          <li>aesthetic sketching to communicate form and use</li>
-        </ul>
-      </div>
-      <div class="flex-item flex-item-4">
-        <h3 style="color: #CC0000;"><b>3. Refine</b></h3>
-        In this phase, we take a concept from the second phase and make it real. Through attention to proportions and
-        every detail, we create 3D CAD models that are manufacturable, ergonomic and aesthetically well balanced and
-        beautiful.
-        <p>Services</p>
-        <ul class="list">
-          <li>building 3D CAD surfacing model</li>
-          <li>collaborate with ME, EE, manufacturers as needed</li>
-          <li>3D printing for testing</li>
-          <li>render of final models to communicate materials and finishes</li>
-          <li>communicate final product to the client</li>
-        </ul>
-      </div>
-      <div class="flex-item flex-item-4">
-        <h3 style="color: #FFCC00;"><b>4. Communicate</b></h3>
-        We stay involved until the product is made. By collaborating with engineers and manufacturers, and communicating
-        and checking the design, we verify the intent until the product ships.
-        <p>Services</p>
-        <ul class="list">
-          <li>tech-pack (documenting parts assembly color, materials, finishes)</li>
-          <li>variance report (correcting T0, T1 samples)</li>
-        </ul>
-      </div>
-    </div>
+            function scrollToSection(event) {
+                event.preventDefault();
+                document.getElementById(this.getAttribute("href").substring(1)).scrollIntoView({ behavior: "smooth" });
+            }
 
-    <div class="divider"></div>
-    <div class="title" id="contact">
-      <h3>CONTACT</h3>
-      <h5><a href="mailto:hello@keydesign.com"><b>HELLO@KEYDESIGN.COM</b></a></h5>
-      <h5>PALO ALTO, CA</h5>
-      <ul class="contact">
-        <li class="contaprojects/li">
-          <h2><a href="https://www.linkedin.com/company/keydesign"><i class="ion-social-linkedin"></i></a></h2>
-        </li>
-        <li class="contaprojects/li">
-          <h2><a href="https://www.facebook.com/Keydesign-166548760364379"><i class="ion-social-facebook"></i></a>
-          </h2>
-        </li>
-        <li class="contaprojects/li">
-          <h2><a href="https://www.pinterest.com/keydesign0450/"><i class="ion-social-pinterest"></i></a></h2>
-        </li>
-      </ul>
-    </div>
-  </div>
+            window.addEventListener("scroll", revealSection);
 
-  <footer class="banner">
-    <h5>
-      <center style="padding: 16px 0;">© 2001-2021 KEYDESIGN. All rights reserved.</center>
-    </h5>
-  </footer>
+            navLinks.forEach(function (link) {
+                link.addEventListener("click", scrollToSection);
+            });
+        });
+
+    </script>
 </body>
 
 </html>

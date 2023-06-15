@@ -7,6 +7,23 @@
   <link rel="next" href="http://www.keydesign.com/#services">
   <link rel="canonical" href="http://www.keydesign.com">
   <link rel="shortlink" href="http://www.keydesign.com">
+- add smooth scroll to main page
 
 ## Commens:
 - 
+
+
+
+Notes
+
+Likes:
+
+Grid structure
+scale animation
+no dark
+text like that website (https://www.morrama.com/)
+
+Dislikes:
+
+clients
+services
