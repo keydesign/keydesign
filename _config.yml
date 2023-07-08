@@ -3,7 +3,7 @@ email: hello@keydesign.com
 description: >-
   TODO
 baseurl:
-url: "http://keydesign.com"
+url:
 collections:
   blogs:
     output: true
