@@ -5,42 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Noto+Sans:100i,300,400,400i,700,700i&display=swap">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/banners.css">
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Geneva, Arial, sans-serif;
-        }
-
-        .navbar {
-            background-color: #ffffff;
-            position: fixed;
-            z-index: 10;
-            top: 0;
-            left: 0;
-            right: 0;
-            padding: 8pt 14pt;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .nav-link {
-            font-size: 11pt;
-            font-weight: normal;
-            text-decoration: none;
-            color: #5e5e5e;
-            margin-left: 35pt;
-        }
-
-        .nav-link.active {
-            color: #c2274b;
-        }
-
         .wrapper {
             display: grid;
             gap: 8pt;
             padding: 0 8pt;
+            padding-bottom: 8pt;
         }
 
         @media screen and (max-width: 599px) {
@@ -70,42 +44,19 @@
         .section {
             scroll-margin-top: 35.4pt;
             padding: 0 6pt;
-            background-color: #ffffff;
+            background-color: var(--background-color);
         }
 
         .statement {
             padding: 49pt 57pt;
-            background-color: #ffffff;
+            background-color: var(--background-color);
+            font-size: 30pt;
+            color: var(--text-color);
         }
 
         .item {
             aspect-ratio: 1.618;
-            background-color: #e0e0e0;
-        }
-
-        .footer {
-            background-color: #5e5e5e;
-            color: #fff;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: -1;
-            display: flex;
-            justify-content: space-between;
-            padding: 35pt 57pt;
-        }
-
-        .footer-text {
-            font-size: 19pt;
-            font-weight: normal;
-        }
-
-        .footer-link {
-            font-size: 14pt;
-            font-weight: normal;
-            text-decoration: none;
-            color: #fff;
+            background-color: var(--footer-text-color);
         }
 
         .zoom-container {
@@ -129,7 +80,7 @@
             position: absolute;
             top: 8pt;
             left: 8pt;
-            color: #000;
+            color: var(--text-color);
             opacity: 0;
             transition: opacity 0.6s;
         }
@@ -137,34 +88,36 @@
         .zoom-container:hover .caption {
             opacity: 1;
         }
+
+        .bottomBorder {
+            border-bottom: var(--border-color);
+            border-bottom-style: solid;
+            border-bottom-width: 0.25pt;
+        }
     </style>
 </head>
 
 <body>
-    <div class="navbar">
-        <a href="#"
-            style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 19.4pt; font-weight: 700; text-decoration: none; color: #000;">KEYDESIGN</a>
+    <div id="header"></div>
+    <!-- <div class="navbar">
+        <a href="#" class="companyLogo">KEYDESIGN</a>
         <div class="links">
             <a href="#work" class="nav-link">WORK</a>
             <a href="#ideas" class="nav-link">IDEAS</a>
-            <a href="#services" class="nav-link">SERVICES</a>
             <a href="#about" class="nav-link">ABOUT</a>
+            <a href="#services" class="nav-link">SERVICES</a>
             <a href="#contact" class="nav-link">CONTACT</a>
         </div>
-    </div>
+    </div> -->
 
-    <div style="margin-top: 35.4pt;">
+    <div style="margin-top: 35.4pt; margin-bottom: calc(100svh/1.618);">
         <div id="statement" class="section statement">
-            <p style="font-size: 19pt; color: #5e5e5e;">
-                Helping clients succeed by creating
-                <br>
-                innovative, beautiful, and user-centric
-                <br>
-                industrial design.
+            <p>
+                Committed to creating success through<br>innovative, beautiful, and empathetic design.
             </p>
         </div>
         <div id="work" class="section">
-            <div class="wrapper">
+            <div class="wrapper bottomBorder">
                 <a href="projects/fivestars">
                     <div class="item zoom-container">
                         <img src="projects/fivestars/images/main.jpg" alt="Fivestars" class="zoom-image">
@@ -298,7 +251,7 @@
             </div>
         </div>
         <div id="ideas" class="section" style="padding-top: 22pt;">
-            <div class="wrapper">
+            <div class="wrapper bottomBorder">
                 <div class="flex-item flex-item-3">
                     <a href="projects/glass_packaging">
                         <div class="item zoom-container">
@@ -311,7 +264,7 @@
                 <div class="flex-item flex-item-3">
                     <a href="projects/3d_chocolate_pen/">
                         <div class="item zoom-container">
-                            <img src="projects/3d_chocolate_pen/images/main.jpg" alt="3D Chocolate Pen"
+                            <img src="projects/3d_chocolate_pen/images/new_main.jpg" alt="3D Chocolate Pen"
                                 class="zoom-image">
                             <div class="caption">3D Chocolate Pen</div>
                         </div>
@@ -352,24 +305,28 @@
                 </div>
             </div>
         </div>
-        <div id="clients" class="section" style="height: 200pt;">
-            <div style="width: 100%; height: 100%; background-color: #fafafa;">
-                <img src="http://www.keydesign.com/images/logo_clients.png" alt="client logos" style="width:100%">
+        <div id="clients" class="section" style="padding-bottom: 22pt;">
+            <div class="wrapper bottomBorder" style="gap: 0;">
+                <img src="images/clients/clients_01.jpg" class="zoom-image">
+                <img src="images/clients/clients_02.jpg" class="zoom-image">
+                <img src="images/clients/clients_03.jpg" class="zoom-image">
             </div>
         </div>
-        <div id="contact" style="height: 184pt;"></div>
     </div>
-    <div class="footer">
-        <div>
-            <span class="footer-text">Planning a new product?<br>Let's talk.</span>
-            <div style="height: 35pt;"></div>
+
+    <div id="footer"></div>
+    <!-- <div class="footer">
+        <div style="display: flex; flex-direction: column;">
+            <span class="footer-text">Planning a new product?<br><i style="font-weight: 100;">Let's</i> talk.</span>
             <a class="footer-link" href="mailto:hello@keydesign.com">Hello@keydesign.com</a>
+            <div style="display: flex; column-gap: 22pt;">
+                <a href="https://www.instagram.com/keydesign_ideas/" class="footer-link"><img style="width: 35pt"
+                        src="images/icons/instagram.svg" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/antonija-j-campbell/" class="footer-link"><img style="width: 35pt"
+                        src="images/icons/linkedin.svg" alt="LinkedIn"></a>
+            </div>
         </div>
-        <div style="display: flex; flex-direction: column; row-gap: 22pt;">
-            <a href="#" class="footer-link">Instagram</a>
-            <a href="#" class="footer-link">LinkedIn</a>
-        </div>
-    </div>
+    </div> -->
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -420,6 +377,27 @@
                 link.addEventListener("click", scrollToSection);
             });
         });
+
+        window.onload = function () {
+            // JavaScript code in script.js
+            $(document).ready(function () {
+                // Fetch the header.html content
+                $.ajax({
+                    url: 'components/header.html',
+                    success: function (data) {
+                        $('#header').html(data);
+                    }
+                });
+
+                // Fetch the footer.html content
+                $.ajax({
+                    url: 'components/footer.html',
+                    success: function (data) {
+                        $('#footer').html(data);
+                    }
+                });
+            });
+        };
 
     </script>
 </body>
