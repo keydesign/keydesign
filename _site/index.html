@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:100i,300,400,400i,700,700i&display=swap">
+<link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+<style>
+    :root {
+        --text-color: #606161;
+        --red-text-color: #ba2548;
+        --background-color: #ffffff;
+        --border-color: #d6d6d6;
+        --footer-text-color: #d7d8d9;
+        --footer-background-color: #424242;
+        --phase-one-color: #189aba;
+        --phase-two-color: #c4c961;
+        --phase-three-color: #9ea6a8;
+    }
+
+    *,
+    *:after,
+    *:before {
+        box-sizing: inherit;
+    }
+
+    html {
+        background: #fff;
+        font-family: 'Noto Sans', Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .content {
+        margin-top: 45.5pt;
+        margin-bottom: calc(100svh/1.618);
+        min-height: calc(100svh - 60px);
+        background-color: var(--background-color);
+    }
+
+    .section {
+        scroll-margin-top: 35.4pt;
+        padding: 0 14pt;
+        background-color: var(--background-color);
+    }
+
+    h1 {
+        color: var(--text-color);
+        font-size: 22pt;
+        font-weight: bold;
+        margin-top: 57pt;
+        margin-bottom: 28.6pt;
+    }
+
+    h2 {
+        color: var(--text-color);
+        margin: 0;
+        font-size: 14pt;
+        font-weight: bold;
+    }
+
+    h3 {
+        color: var(--text-color);
+        font-size: 14pt;
+        font-weight: bold;
+        margin: 14.3pt 0;
+    }
+
+    p {
+        margin: 0;
+        font-weight: 300;
+        font-size: 11pt;
+        margin-bottom: 0;
+    }
+
+    span {
+        margin: 0;
+        font-weight: 300;
+        font-size: 11pt;
+        margin-bottom: 0;
+    }
+    
+    @media (max-width: 1023px) {
+        .hideWhenSmallScreen {
+            display: none;
+        }
+    }
+</style>
+
+
+<link rel="stylesheet" href="/assets/css/index.css">
+
+
+    <title>Index | Keydesign</title>
+    <link rel="stylesheet" href="/assets/css/banners.css">
+    <link rel="stylesheet" href="/assets/css/wrapper.css">
+</head>
+
+<body>
+    <div class="navbar">
+    <div style="display: flex; justify-content: space-between; width: 100%;">
+        <a href="/"
+            class="companyLogo">KEYDESIGN</a>
+        <button class="hamburger" id="hamburgerBtn" onclick="toggleNavbar()">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </div>
+    <div class="navbarLinks" id="navbarLinks">
+        <a href="#work"
+            class="nav-link"  onclick="toggleNavbar(true)">WORK</a>
+        <a href="#ideas"
+            class="nav-link"  onclick="toggleNavbar(true)">IDEAS</a>
+        <a href="/about/" class="nav-link"  onclick="toggleNavbar(true)">ABOUT</a>
+        <a href="/services/" class="nav-link"  onclick="toggleNavbar(true)">SERVICES</a>
+        <a href="#contact"
+            class="nav-link"  onclick="toggleNavbar(true)">CONTACT</a>
+    </div>
+    <script>
+        const navbar = document.querySelector('.navbar');
+        function toggleNavbar (close) {
+            if (close) {
+                navbar.classList.remove('open');
+            } else {
+                navbar.classList.toggle('open');
+            }
+        };
+    </script>
+</div>
+
+    <div class="content">
+    <p id="statement" class="section statement">
+        Committed to creating success through <br class="hideWhenSmallScreen" />innovative, beautiful, and empathetic design.
+    </p>
+    <div id="work" class="section bottomBorder">
+        <div class="wrapper">
+        
+        
+        </div>
+    </div>
+    <div id="ideas" class="section bottomBorder" style="padding-top: 22pt;">
+        <div class="wrapper">
+            
+            
+        </div>
+    </div>
+    <div id="clients" class="section" style="padding-bottom: 35pt">
+        <div class="clientGrid">
+            <div class="item"><img src="/assets/images/clients/logo_ActivAngel.jpg" /></div>
+            <div class="item"><img src="/assets/images/clients/logo_AeroPress.jpg" /></div>
+            <div class="item"><img src="/assets/images/clients/logo_Fivestars.jpg" /></div>
+            <div class="item"><img src="/assets/images/clients/logo_FlameKing.jpg" /></div>
+            <div class="item"><img src="/assets/images/clients/logo_GE.jpg" /></div>
+            <div class="item"><img src="/assets/images/clients/logo_Golden Trees.jpg" /></div>
+            <div class="item"><img src="/assets/images/clients/logo_Graco.jpg" /></div>
+            <div class="item"><img src="/assets/images/clients/logo_Griffin.jpg" /></div>
+            <div class="item"><img src="/assets/images/clients/logo_Hartmann.jpg" /></div>
+            <div class="item"><img src="/assets/images/clients/logo_Jame Technology.jpg" /></div>
+            <div class="item"><img src="/assets/images/clients/logo_Lennox.jpg" /></div>
+            <div class="item"><img src="/assets/images/clients/logo_Lilly.jpg" /></div>
+            <div class="item"><img src="/assets/images/clients/logo_LiveCopper.jpg" /></div>
+            <div class="item"><img src="/assets/images/clients/logo_NaturesCooling.jpg" /></div>
+            <div class="item"><img src="/assets/images/clients/logo_Neotop.jpg" /></div>
+            <div class="item"><img src="/assets/images/clients/logo_Newgy.jpg" /></div>
+            <div class="item"><img src="/assets/images/clients/logo_Optari.jpg" /></div>
+            <div class="item"><img src="/assets/images/clients/logo_Osmo.jpg" /></div>
+            <div class="item"><img src="/assets/images/clients/logo_Somnarus.jpg" /></div>
+            <div class="item"><img src="/assets/images/clients/logo_TiltFive.jpg" /></div>
+            <div class="item"><img src="/assets/images/clients/logo_Tovbot.jpg" /></div>
+            <div class="item"><img src="/assets/images/clients/logo_Victorinox.jpg" /></div>
+            <div class="item"><img src="/assets/images/clients/logo_Zagg.jpg" /></div>
+            <div class="item"><img src="/assets/images/clients/logo_Zuslab.jpg" /></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const revealPoint = window.innerHeight / 2;
+    const sectionMap = {};
+    const documentHeight = Math.max(
+        document.documentElement.scrollHeight,
+        document.documentElement.offsetHeight,
+        document.documentElement.clientHeight
+    );
+    const navLinks = Array.from(document.querySelectorAll(".nav-link")).reverse();
+    const linkCount = navLinks.length;
+
+    // Cache section offsets
+    navLinks.forEach(function (navLink) {
+        const href = navLink.getAttribute("href");
+        if (href && href.startsWith("#")) {
+            const section = document.getElementById(href.slice(1));
+            if (section) {
+                sectionMap[navLink] = section.offsetTop;
+            }
+        }
+    });
+
+    function revealSection() {
+        const isActive = Array(linkCount).fill(false);
+        const windowOffsetY = window.pageYOffset;
+
+        if (windowOffsetY < 20) {
+            // Handle special case when scrolling to the top
+        } else if (documentHeight - windowOffsetY - window.innerHeight <= 20) {
+            // Handle special case when scrolling to the bottom
+            isActive[0] = true;
+        } else {
+            for (let index = 0; index < linkCount; index++) {
+                const link = navLinks[index];
+                const sectionOffset = sectionMap[link];
+                if (sectionOffset && windowOffsetY > sectionOffset - revealPoint) {
+                    isActive[index] = true;
+                    break;
+                }
+            }
+        }
+
+        navLinks.forEach(function (link, index) {
+            if (isActive[index]) {
+                link.classList.add("active");;
+            } else {
+                link.classList.remove("active");;
+            }
+        });
+    }
+
+    function scrollToSection(event) {
+        event.preventDefault();
+        const target = document.getElementById(this.getAttribute("href").substring(1));
+        target.scrollIntoView({ behavior: "smooth" });
+    }
+
+    navLinks.forEach(function (link) {
+        if (link.href.includes('#')) {
+            link.addEventListener("click", function (event) {
+                scrollToSection.call(this, event);
+                navLinks.forEach(function (link) {
+                    link.classList.remove("active");
+                });
+                this.classList.add("active");
+            });
+        }
+    });
+
+    window.addEventListener("scroll", revealSection);
+</script>
+
+
+
+    <div id="contact"></div>
+<div class="footer">
+    <div style="display: flex; flex-direction: column;">
+        <span class="footer-text">Planning a new product?<br><i style="font-weight: 100;">Let's</i> talk.</span>
+        <!-- <div style="height: 35pt"></div> -->
+        <a class="footer-link" href="mailto:hello@keydesign.com">Hello@keydesign.com</a>
+        <!-- <div style="height: 35pt"></div> -->
+        <div style="display: flex; column-gap: 22pt;">
+            <a href="https://www.instagram.com/keydesign_ideas/" class="footer-link"><img style="width: 35pt"
+                    src="/assets/images/icons/instagram.svg" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/antonija-j-campbell/" class="footer-link"><img style="width: 35pt"
+                    src="/assets/images/icons/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+    </div>
+</div>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:100i,300,400,400i,700,700i&display=swap">
+<link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+<style>
+    :root {
+        --text-color: #606161;
+        --red-text-color: #ba2548;
+        --background-color: #ffffff;
+        --border-color: #d6d6d6;
+        --footer-text-color: #d7d8d9;
+        --footer-background-color: #424242;
+        --phase-one-color: #189aba;
+        --phase-two-color: #c4c961;
+        --phase-three-color: #9ea6a8;
+    }
+
+    *,
+    *:after,
+    *:before {
+        box-sizing: inherit;
+    }
+
+    html {
+        background: #fff;
+        font-family: 'Noto Sans', Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .content {
+        margin-top: 45.5pt;
+        margin-bottom: calc(100svh/1.618);
+        min-height: calc(100svh - 60px);
+        background-color: var(--background-color);
+    }
+
+    .section {
+        scroll-margin-top: 35.4pt;
+        padding: 0 14pt;
+        background-color: var(--background-color);
+    }
+
+    h1 {
+        color: var(--text-color);
+        font-size: 22pt;
+        font-weight: bold;
+        margin-top: 57pt;
+        margin-bottom: 28.6pt;
+    }
+
+    h2 {
+        color: var(--text-color);
+        margin: 0;
+        font-size: 14pt;
+        font-weight: bold;
+    }
+
+    h3 {
+        color: var(--text-color);
+        font-size: 14pt;
+        font-weight: bold;
+        margin: 14.3pt 0;
+    }
+
+    p {
+        margin: 0;
+        font-weight: 300;
+        font-size: 11pt;
+        margin-bottom: 0;
+    }
+
+    span {
+        margin: 0;
+        font-weight: 300;
+        font-size: 11pt;
+        margin-bottom: 0;
+    }
+    
+    @media (max-width: 1023px) {
+        .hideWhenSmallScreen {
+            display: none;
+        }
+    }
+</style>
+
+
+<link rel="stylesheet" href="/assets/css/blogs.css">
+
+
+    <title>About | Keydesign</title>
+    <link rel="stylesheet" href="/assets/css/banners.css">
+    <link rel="stylesheet" href="/assets/css/wrapper.css">
+</head>
+
+<body>
+    <div class="navbar">
+    <div style="display: flex; justify-content: space-between; width: 100%;">
+        <a href="/"
+            class="companyLogo">KEYDESIGN</a>
+        <button class="hamburger" id="hamburgerBtn" onclick="toggleNavbar()">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </div>
+    <div class="navbarLinks" id="navbarLinks">
+        <a href="/#work"
+            class="nav-link"  onclick="toggleNavbar(true)">WORK</a>
+        <a href="/#ideas"
+            class="nav-link"  onclick="toggleNavbar(true)">IDEAS</a>
+        <a href="/about/" class="nav-link"  onclick="toggleNavbar(true)">ABOUT</a>
+        <a href="/services/" class="nav-link"  onclick="toggleNavbar(true)">SERVICES</a>
+        <a href="/#contact"
+            class="nav-link"  onclick="toggleNavbar(true)">CONTACT</a>
+    </div>
+    <script>
+        const navbar = document.querySelector('.navbar');
+        function toggleNavbar (close) {
+            if (close) {
+                navbar.classList.remove('open');
+            } else {
+                navbar.classList.toggle('open');
+            }
+        };
+    </script>
+</div>
+
+    <div class="content">
+    <div id="Expertise" class="section">
+        <div class="wrapper" style="padding: 0;">
+            <div></div>
+            <h1>Expertise</h1>
+        </div>
+        <div class="wrapper">
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <img src="/assets/images/partners.svg" style="width: 242pt; height: 190pt;" />
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <h2>Keydesign</h2>
+                <p style="margin-bottom: 35pt;">We specialize in industrial design services. Offering support from the initial concepts to the final design. We've helped startups get to the next level (from humble beginnings to IPO), worked with established companies to innovate and stay ahead of the competition.</p>
+                <h2>Partnet network</h2>
+                <p>We are committed to help our clients succeed by offering support throughout the entire product development, from the initial concepts to the final product. In collaboration with our partners we can offer additional services beyond industrial design. Our partner network includes experts in mechanical engineering, packaging design, and manufacturing.</p>
+            </div>
+        </div>
+    </div>
+    <div id="DesignThinking1" class="section">
+        <div class="wrapper" style="padding: 0;">
+            <div></div>
+            <h1>Design Thinking</h1>
+        </div>
+        
+        
+        <div class="wrapper" style="margin-bottom: 35pt;">
+            <div class="blog-image-wrapper">
+                <img src="/assets/images/blogs/blog3/main.jpg" class="blog-image" />
+            </div>
+            <div>
+                <h2>Quiet companion / Loud Statement</h2>
+                <span>Highlight the consultancy’s approach to innovation and its ability to leverage cutting-edge technologies and design tools. Emphasize the use of advanced software,
+ <a href="/blogs/blog3/" class="blog-link">read more...</a></span>
+            </div>
+        </div>
+        
+        <div class="wrapper" style="margin-bottom: 35pt;">
+            <div class="blog-image-wrapper">
+                <img src="/assets/images/blogs/blog2/main.jpg" class="blog-image" />
+            </div>
+            <div>
+                <h2>Designing for client and user in mind</h2>
+                <span>Highlight the consultancy’s approach to innovation and its ability to leverage cutting-edge technologies and design tools. Emphasize the use of advanced software,
+ <a href="/blogs/blog2/" class="blog-link">read more...</a></span>
+            </div>
+        </div>
+        
+        <div class="wrapper" style="margin-bottom: 35pt;">
+            <div class="blog-image-wrapper">
+                <img src="/assets/images/blogs/blog1/main.jpg" class="blog-image" />
+            </div>
+            <div>
+                <h2>Golden ratio, a secret grid of beauty</h2>
+                <span>Highlight the consultancy’s approach to innovation and its ability to leverage cutting-edge technologies and design tools. Emphasize the use of advanced software,
+ <a href="/blogs/blog1/" class="blog-link">read more...</a></span>
+            </div>
+        </div>
+        
+        <div class="wrapper">
+            <div></div>
+            <div>
+                <h2><a href="/blogs/" style="text-decoration: none; color: var(--text-color)">See more...</a></h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div id="contact"></div>
+<div class="footer">
+    <div style="display: flex; flex-direction: column;">
+        <span class="footer-text">Planning a new product?<br><i style="font-weight: 100;">Let's</i> talk.</span>
+        <!-- <div style="height: 35pt"></div> -->
+        <a class="footer-link" href="mailto:hello@keydesign.com">Hello@keydesign.com</a>
+        <!-- <div style="height: 35pt"></div> -->
+        <div style="display: flex; column-gap: 22pt;">
+            <a href="https://www.instagram.com/keydesign_ideas/" class="footer-link"><img style="width: 35pt"
+                    src="/assets/images/icons/instagram.svg" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/antonija-j-campbell/" class="footer-link"><img style="width: 35pt"
+                    src="/assets/images/icons/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+    </div>
+</div>
+
+    
+</body>
+
+</html>
