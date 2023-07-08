@@ -2,8 +2,8 @@ title: Keydesign
 email: hello@keydesign.com
 description: >-
   TODO
-baseurl:
-url:
+baseurl: keydesign.com
+url: http://keydesign.com
 collections:
   blogs:
     output: true
