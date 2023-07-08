@@ -1,0 +1,19 @@
+title: Keydesign
+email: hello@keydesign.com
+description: >-
+  TODO
+baseurl:
+url: "http://keydesign.com"
+collections:
+  blogs:
+    output: true
+    permalink: /blogs/:title/
+  ideas:
+    output: true
+    permalink: /ideas/:title/
+  pages:
+    output: true
+    permalink: /:collection/:path/
+  projects:
+    output: true
+    permalink: /projects/:title/

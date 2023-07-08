@@ -1,0 +1,31 @@
+<div class="navbar">
+    <div style="display: flex; justify-content: space-between; width: 100%;">
+        <a href="{% if page.url == '/' or page.url == '/index.html' %}/{% else %}{{ site.baseurl }}/{% endif %}"
+            class="companyLogo">KEYDESIGN</a>
+        <button class="hamburger" id="hamburgerBtn" onclick="toggleNavbar()">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </div>
+    <div class="navbarLinks" id="navbarLinks">
+        <a href="{% if page.url == '/' or page.url == '/index.html' %}#work{% else %}{{ site.baseurl }}/#work{% endif %}"
+            class="nav-link"  onclick="toggleNavbar(true)">WORK</a>
+        <a href="{% if page.url == '/' or page.url == '/index.html' %}#ideas{% else %}{{ site.baseurl }}/#ideas{% endif %}"
+            class="nav-link"  onclick="toggleNavbar(true)">IDEAS</a>
+        <a href="{{ site.baseurl }}/about/" class="nav-link"  onclick="toggleNavbar(true)">ABOUT</a>
+        <a href="{{ site.baseurl }}/services/" class="nav-link"  onclick="toggleNavbar(true)">SERVICES</a>
+        <a href="{% if page.url == '/' or page.url == '/index.html' %}#contact{% else %}{{ site.baseurl }}/#contact{% endif %}"
+            class="nav-link"  onclick="toggleNavbar(true)">CONTACT</a>
+    </div>
+    <script>
+        const navbar = document.querySelector('.navbar');
+        function toggleNavbar (close) {
+            if (close) {
+                navbar.classList.remove('open');
+            } else {
+                navbar.classList.toggle('open');
+            }
+        };
+    </script>
+</div>
