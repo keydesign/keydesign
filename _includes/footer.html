@@ -7,9 +7,15 @@
         <!-- <div style="height: 35pt"></div> -->
         <div style="display: flex; column-gap: 22pt;">
             <a href="https://www.instagram.com/keydesign_ideas/" class="footer-link"><img style="width: 35pt"
-                    src="/assets/images/icons/instagram.svg" alt="Instagram"></a>
+                    src="{{ site.baseurl }}/assets/images/icons/instagram.svg" alt="Instagram"></a>
             <a href="https://www.linkedin.com/in/antonija-j-campbell/" class="footer-link"><img style="width: 35pt"
-                    src="/assets/images/icons/linkedin.svg" alt="LinkedIn"></a>
+                    src="{{ site.baseurl }}/assets/images/icons/linkedin.svg" alt="LinkedIn"></a>
         </div>
     </div>
 </div>
+
+{% if page.scripts %}
+{% for script in page.scripts %}
+<script src="{{ script | prepend: site.baseurl }}"></script>
+{% endfor %}
+{% endif %}

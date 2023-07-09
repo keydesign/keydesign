@@ -4,8 +4,8 @@
 <head>
     {% include shared_head.html %}
     <title>{% if page.client %}{{ page.client }} - {% endif %}{{ page.title }} | {{ site.title }}</title>
-    <link rel="stylesheet" href="/assets/css/banners.css">
-    <link rel="stylesheet" href="/assets/css/wrapper.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/banners.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/wrapper.css">
     <style>
         :root {
             --large-space: 35pt;
@@ -66,11 +66,11 @@
         <div class="section" style="padding-top: 57pt; padding-bottom: 22pt; min-height: calc(100svh - 135px)">
             <div class="wrapper">
                 <div id="carousel" class="carousel-container" style="grid-column: span 2;">
-                    <img class="carousel-main-image" src="{{ page.images[0] }}">
+                    <img class="carousel-main-image" src="{{ page.images[0] | prepend: site.baseurl }}">
                     <div class="carousel-thumbnails">
                         {% for image in page.images %}
                         <div class="carousel-thumbnail{% if forloop.first %} active{% endif %}">
-                            <img src="{{ image }}">
+                            <img src="{{ image | prepend: site.baseurl }}">
                         </div>
                         {% endfor %}
                     </div>
@@ -145,16 +145,6 @@
                 currentIndex = (currentIndex + 1) % thumbnails.length;
                 updateCarousel(currentIndex);
             }, 5000);
-        });
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var navbar = document.querySelector('.navbar');
-            var hamburgerBtn = document.querySelector('#hamburgerBtn');
-
-            hamburgerBtn.addEventListener('click', function () {
-                navbar.classList.toggle('open');
-            });
         });
     </script>
 </body>

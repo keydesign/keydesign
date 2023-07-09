@@ -10,7 +10,7 @@
   justify-content: space-between;
   border-bottom: var(--border-color);
   border-bottom-style: solid;
-  border-bottom-width: 0.25pt;
+  border-bottom-width: var(--boder-width);
 }
 
 .companyLogo {

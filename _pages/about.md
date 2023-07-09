@@ -1,7 +1,7 @@
 ---
 layout: default
 styles:
-  - /assets/css/blogs.css
+  - "/assets/css/blogs.css"
 permalink: /about/
 ---
 <div class="content">
@@ -12,7 +12,7 @@ permalink: /about/
         </div>
         <div class="wrapper">
             <div style="display: flex; align-items: center; justify-content: center;">
-                <img src="/assets/images/partners.svg" style="width: 242pt; height: 190pt;">
+                <img src="{{ site.baseurl }}/assets/images/partners.svg" style="width: 242pt; height: 190pt;">
             </div>
             <div style="display: flex; flex-direction: column;">
                 <h2>Keydesign</h2>
@@ -31,18 +31,18 @@ permalink: /about/
         {% for blog in blogs limit: 3 %}
         <div class="wrapper" style="margin-bottom: 35pt;">
             <div class="blog-image-wrapper">
-                <img src="{{ blog.main_image }}" class="blog-image">
+                <img src="{{ blog.main_image | prepend: site.baseurl }}" class="blog-image">
             </div>
             <div>
                 <h2>{{ blog.title }}</h2>
-                <span>{{ blog.content | strip_html | truncate: 200 }} <a href="{{ blog.url }}" class="blog-link">read more...</a></span>
+                <span>{{ blog.content | strip_html | truncate: 200 }} <a href="{{ blog.url | prepend: site.baseurl }}" class="blog-link">read more...</a></span>
             </div>
         </div>
         {% endfor %}
         <div class="wrapper">
             <div></div>
             <div>
-                <h2><a href="/blogs/" style="text-decoration: none; color: var(--text-color)">See more...</a></h2>
+                <h2><a href="{{ site.baseurl }}/blogs/" style="text-decoration: none; color: var(--text-color)">See more...</a></h2>
             </div>
         </div>
     </div>

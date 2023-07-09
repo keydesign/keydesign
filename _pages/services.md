@@ -1,7 +1,7 @@
 ---
 layout: default
 styles:
-  - /assets/css/services.css
+  - "/assets/css/services.css"
 permalink: /services/
 ---
 
@@ -15,9 +15,9 @@ permalink: /services/
     </div>
     <div id="PhaseOne" class="section wrapper">
         <div style=" display: flex; flex-direction: column-reverse; width: 100pt; margin: 0 auto;">
-            <img src="/assets/images/services/process/02.svg">
-            <img src="/assets/images/services/process/single_arrow.svg">
-            <img src="/assets/images/services/process/01.svg">
+            <img src="{{ site.baseurl }}/assets/images/services/process/02.svg">
+            <img src="{{ site.baseurl }}/assets/images/services/process/single_arrow.svg">
+            <img src="{{ site.baseurl }}/assets/images/services/process/01.svg">
         </div>
         <div style="display: flex; flex-direction: column;">
             <div style="display: flex; flex-direction: column;">
@@ -32,12 +32,12 @@ permalink: /services/
     </div>
     <div id="PhaseTwo" class="section wrapper">
         <div style=" display: flex; flex-direction: column; justify-content: center; width: 100pt; margin: 0 auto;">
-            <img src="/assets/images/services/process/double_arrow.svg">
-            <img src="/assets/images/services/process/03.svg">
-            <img src="/assets/images/services/process/double_arrow.svg">
-            <img src="/assets/images/services/process/04.svg">
-            <img src="/assets/images/services/process/double_arrow.svg">
-            <img src="/assets/images/services/process/05.svg">
+            <img src="{{ site.baseurl }}/assets/images/services/process/double_arrow.svg">
+            <img src="{{ site.baseurl }}/assets/images/services/process/03.svg">
+            <img src="{{ site.baseurl }}/assets/images/services/process/double_arrow.svg">
+            <img src="{{ site.baseurl }}/assets/images/services/process/04.svg">
+            <img src="{{ site.baseurl }}/assets/images/services/process/double_arrow.svg">
+            <img src="{{ site.baseurl }}/assets/images/services/process/05.svg">
         </div>
         <div style="display: flex; flex-direction: column;">
             <div style="display: flex; flex-direction: column;">
@@ -54,10 +54,10 @@ permalink: /services/
     </div>
     <div id="PhaseThree" class="section wrapper">
         <div style=" display: flex; flex-direction: column; width: 100pt; margin: 0 auto;">
-            <img src="/assets/images/services/process/double_arrow.svg">
-            <img src="/assets/images/services/process/06.svg">
-            <img src="/assets/images/services/process/single_arrow.svg">
-            <img src="/assets/images/services/process/07.svg">
+            <img src="{{ site.baseurl }}/assets/images/services/process/double_arrow.svg">
+            <img src="{{ site.baseurl }}/assets/images/services/process/06.svg">
+            <img src="{{ site.baseurl }}/assets/images/services/process/single_arrow.svg">
+            <img src="{{ site.baseurl }}/assets/images/services/process/07.svg">
         </div>
         <div style="display: flex; flex-direction: column;">
             <div style="display: flex; flex-direction: column;">

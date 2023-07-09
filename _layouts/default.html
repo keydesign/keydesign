@@ -4,8 +4,8 @@
 <head>
     {% include shared_head.html %}
     <title>{% if page.title and page.title != site.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-    <link rel="stylesheet" href="/assets/css/banners.css">
-    <link rel="stylesheet" href="/assets/css/wrapper.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/banners.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/wrapper.css">
 </head>
 
 <body>
@@ -14,12 +14,6 @@
     {{ content }}
 
     {% include footer.html %}
-
-    {% if page.scripts %}
-    {% for script in page.scripts %}
-    <script src="{{ script | relative_url }}"></script>
-    {% endfor %}
-    {% endif %}
 </body>
 
 </html>

@@ -2,7 +2,7 @@
 layout: default
 styles:
   - "/assets/css/index.css"
-permalink: /
+permalink: /show_all/
 ---
 <div class="content">
     <p id="statement" class="section statement">
@@ -10,8 +10,7 @@ permalink: /
     </p>
     <div id="work" class="section bottomBorder">
         <div class="wrapper">
-        {% assign projects = site.projects | where: "active", true %}
-        {% for project in projects %}
+        {% for project in site.projects %}
         <a href="{{ project.url | prepend: site.baseurl }}">
             <div class="item zoom-container">
                 <img src="{{ project.main_image | prepend: site.baseurl }}" alt="{{ project.title }}: Main image" class="zoom-image">
@@ -23,8 +22,7 @@ permalink: /
     </div>
     <div id="ideas" class="section bottomBorder" style="padding-top: 22pt;">
         <div class="wrapper">
-            {% assign ideas = site.ideas | where: "active", true %}
-            {% for idea in ideas %}
+            {% for idea in site.ideas %}
             <a href="{{ idea.url | prepend: site.baseurl }}">
                 <div class="item zoom-container">
                     <img src="{{ idea.main_image | prepend: site.baseurl }}" alt="{{ idea.title }}: Main image" class="zoom-image">

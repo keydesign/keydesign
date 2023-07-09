@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:100i,300,400,400i,700,700i&display=swap">
-<link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+<link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/assets/favicon.ico" />
 <style>
     :root {
         --text-color: #606161;
@@ -13,6 +13,9 @@
         --phase-one-color: #189aba;
         --phase-two-color: #c4c961;
         --phase-three-color: #9ea6a8;
+
+        
+        --border-width: 0.5pt;
     }
 
     *,
@@ -91,6 +94,6 @@
 </style>
 {% if page.styles %}
 {% for style in page.styles %}
-<link rel="stylesheet" href="{{ style | relative_url }}">
+<link rel="stylesheet" href="{{ style | prepend: site.baseurl }}">
 {% endfor %}
 {% endif %}
