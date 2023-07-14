@@ -77,7 +77,9 @@
                 </div>
                 <div style="grid-column: span 1;">
                     <h2>{{ page.title }}</h2>
-                    <h2>Client: {{ page.client }}</h2>
+                    <h2>{{ page.client }}{% if page.year %} | {{ page.year }}{% endif %}</h2>
+                    <h2>{% if page.sector %}Sector: | {{ page.sector }}{% endif %}</h2>
+                    <h2>{% if page.link %}Link: | <a href="{{ page.link }}">{{ page.link }}</a>{% endif %}</h2>
                     <p style="margin-top: var(--large-space);">{{ page.description }}</p>
                     <h3>Challenge</h3>
                     <p>{{ page.challenge }}</p>
