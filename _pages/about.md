@@ -3,6 +3,7 @@ layout: default
 styles:
   - "/assets/css/blogs.css"
 permalink: /about/
+hightlightAbout: "true"
 ---
 <div class="content">
     <div id="Expertise" class="section">

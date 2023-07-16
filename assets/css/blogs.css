@@ -27,3 +27,11 @@
 h2 {
     margin-bottom: 14.3pt;
 }
+
+@media (max-width: 1023px) {
+    .blog-image-wrapper {
+        justify-content: left;
+        margin-left: 14pt;
+        margin-right: 14pt;
+    }
+}

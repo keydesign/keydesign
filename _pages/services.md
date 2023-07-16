@@ -3,21 +3,46 @@ layout: default
 styles:
   - "/assets/css/services.css"
 permalink: /services/
+hightlightServices: "true"
 ---
+<style>
+    .imageCollection {
+        display: flex;
+        width: 100pt;
+        margin: 0 auto;
+    }
 
+    @media (max-width: 1023px) {
+        .wrapper {
+            padding-left: 14pt;
+            padding-right: 30svw;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 787px) {
+        .wrapper {
+            padding-right: 14pt;
+        }
+    }
+</style>
 <div class="content">
-    <div id="Banner" class="section" style="padding: 92pt 0;">
-        <div class="wrapper">
-            <div class="item" style="background-color: aquamarine;"></div>
-            <div class="item" style="background-color: aquamarine;"></div>
-            <div class="item" style="background-color: aquamarine;"></div>
+    <div class="hideWhenSmallScreen">
+        <div id="Banner" class="section" style="padding-top: 92pt; padding-bottom: 23pt;">
+            <div class="wrapper">
+                <div class="item" style="background-color: #f9f9f9;"></div>
+                <div class="item" style="background-color: #f9f9f9;"></div>
+                <div class="item" style="background-color: #f9f9f9;"></div>
+            </div>
         </div>
     </div>
     <div id="PhaseOne" class="section wrapper">
-        <div style=" display: flex; flex-direction: column-reverse; width: 100pt; margin: 0 auto;">
-            <img src="{{ site.baseurl }}/assets/images/services/process/02.svg">
-            <img src="{{ site.baseurl }}/assets/images/services/process/single_arrow.svg">
-            <img src="{{ site.baseurl }}/assets/images/services/process/01.svg">
+        <div class="hideWhenSmallScreen">
+            <div class="imageCollection" style="flex-direction: column-reverse; height: 100%;">
+                <img src="{{ site.baseurl }}/assets/images/services/process/02.svg">
+                <img src="{{ site.baseurl }}/assets/images/services/process/single_arrow.svg">
+                <img src="{{ site.baseurl }}/assets/images/services/process/01.svg">
+            </div>
         </div>
         <div style="display: flex; flex-direction: column;">
             <div style="display: flex; flex-direction: column;">
@@ -32,13 +57,15 @@ permalink: /services/
         </div>
     </div>
     <div id="PhaseTwo" class="section wrapper">
-        <div style=" display: flex; flex-direction: column; justify-content: center; width: 100pt; margin: 0 auto;">
-            <img src="{{ site.baseurl }}/assets/images/services/process/double_arrow.svg">
-            <img src="{{ site.baseurl }}/assets/images/services/process/03.svg">
-            <img src="{{ site.baseurl }}/assets/images/services/process/double_arrow.svg">
-            <img src="{{ site.baseurl }}/assets/images/services/process/04.svg">
-            <img src="{{ site.baseurl }}/assets/images/services/process/double_arrow.svg">
-            <img src="{{ site.baseurl }}/assets/images/services/process/05.svg">
+        <div class="hideWhenSmallScreen">
+            <div class="imageCollection" style="flex-direction: column; justify-content: center;">
+                <img src="{{ site.baseurl }}/assets/images/services/process/double_arrow.svg">
+                <img src="{{ site.baseurl }}/assets/images/services/process/03.svg">
+                <img src="{{ site.baseurl }}/assets/images/services/process/double_arrow.svg">
+                <img src="{{ site.baseurl }}/assets/images/services/process/04.svg">
+                <img src="{{ site.baseurl }}/assets/images/services/process/double_arrow.svg">
+                <img src="{{ site.baseurl }}/assets/images/services/process/05.svg">
+            </div>
         </div>
         <div style="display: flex; flex-direction: column;">
             <div style="display: flex; flex-direction: column;">
@@ -55,11 +82,13 @@ permalink: /services/
         </div>
     </div>
     <div id="PhaseThree" class="section wrapper">
-        <div style=" display: flex; flex-direction: column; width: 100pt; margin: 0 auto;">
-            <img src="{{ site.baseurl }}/assets/images/services/process/double_arrow.svg">
-            <img src="{{ site.baseurl }}/assets/images/services/process/06.svg">
-            <img src="{{ site.baseurl }}/assets/images/services/process/single_arrow.svg">
-            <img src="{{ site.baseurl }}/assets/images/services/process/07.svg">
+        <div class="hideWhenSmallScreen">
+            <div class="imageCollection" style="flex-direction: column;">
+                <img src="{{ site.baseurl }}/assets/images/services/process/double_arrow.svg">
+                <img src="{{ site.baseurl }}/assets/images/services/process/06.svg">
+                <img src="{{ site.baseurl }}/assets/images/services/process/single_arrow.svg">
+                <img src="{{ site.baseurl }}/assets/images/services/process/07.svg">
+            </div>
         </div>
         <div style="display: flex; flex-direction: column;">
             <div style="display: flex; flex-direction: column;">

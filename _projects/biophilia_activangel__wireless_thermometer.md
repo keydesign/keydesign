@@ -2,16 +2,17 @@
 layout: project
 active: true
 permalink: /biophilia__wireless_thermometer/
+order: 0
 title: "ActivAngel smart thermometer"
 client: "Biophilia"
 year: 2018
 link:
 sector: "Wearable medical device"
 description: "Thermometer that makes monitoring fever easy by continually measuring the patients temperature and sending readings and alerts to the smart phone."
-the brief: "Keydesign met the founding team of ActivAngel when they had their first generation working prototype, and they needed a consumer-ready industrial design and brand update. Comfort, functionality and hygiene were our design focus."
+brief: "Keydesign met the founding team of ActivAngel when they had their first generation working prototype, and they needed a consumer-ready industrial design and brand update. Comfort, functionality and hygiene were our design focus."
 solution: "The pebble-like feel of the thermometer most comfortably and least noticeably fits on the body where it can stay for days attached by a breathable, strong adhesive that is gentle on the skin. The second generation (top images) minimized costs and parts. The first generation (called Stemp, and successfully crowdfunded on Indiegogo) had a USB charging stick and a storage box that held all the parts (thermometer, charger and adhesives)"
 quote:
-awards:
+award:
 services:
  - "market research"
  - "ideation sketching"

@@ -9,7 +9,7 @@ permalink: /blogs/
     <div id="blog" class="section">
         <div class="wrapper" style="padding: 0;">
             <div></div>
-            <h1>Blog</h1>
+            <h1>Design Thinking</h1>
         </div>
         {% assign blogs = site.blogs | reverse %}
         {% for blog in blogs %}
