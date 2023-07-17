@@ -11,7 +11,7 @@ permalink: /
     <div id="work" class="section bottomBorder" style="padding-top: 0;">
         <div class="wrapper">
         {% assign projects = site.projects | where: "active", true %}
-        {% for project in site.projects %}
+        {% for project in projects %}
         <a href="{{ project.url | prepend: site.baseurl }}">
             <div class="item zoom-container">
                 <img src="{{ project.main_image | prepend: site.baseurl }}" alt="{{ project.title }}: Main image" class="zoom-image">
@@ -24,7 +24,7 @@ permalink: /
     <div id="ideas" class="section bottomBorder">
         <div class="wrapper">
             {% assign ideas = site.ideas | where: "active", true %}
-            {% for idea in site.ideas %}
+            {% for idea in ideas %}
             <a href="{{ idea.url | prepend: site.baseurl }}">
                 <div class="item zoom-container">
                     <img src="{{ idea.main_image | prepend: site.baseurl }}" alt="{{ idea.title }}: Main image" class="zoom-image">
