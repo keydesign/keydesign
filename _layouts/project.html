@@ -9,7 +9,8 @@
     <style>
         :root {
             --large-space: 35pt;
-            --small-space: 17.5pt;
+            --small-space: 21pt;
+            --smaller-space: 11pt;
         }
 
         .carousel-main-image {
@@ -19,11 +20,9 @@
         }
 
         .carousel-thumbnails {
-            display: flex;
-            flex-wrap: wrap;
-            /* justify-content: center; */
-            row-gap: 14px;
-            column-gap: 14px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 14pt;
             margin-top: 10px;
         }
 
@@ -31,7 +30,6 @@
             cursor: pointer;
             opacity: 0.7;
             transition: opacity 0.3s ease-in-out;
-            width: calc(25% - 10.5pt);
             aspect-ratio: 1.618;
         }
 
@@ -50,11 +48,18 @@
             gap: 14pt;
         }
 
+        a {
+            color: var(--text-color);
+        }
+
+        h1 {
+            margin: 0;
+            margin-bottom: 14pt;
+        }
+
         h3 {
-            font-weight: 300;
-            font-size: 14pt;
-            margin-top: var(--large-space);
-            margin-bottom: var(--small-space);
+            margin-top: var(--small-space);
+            margin-bottom: var(--smaller-space);
         }
     </style>
 </head>
@@ -76,17 +81,17 @@
                     </div>
                 </div>
                 <div style="grid-column: span 1;">
-                    <h2>{{ page.title }}</h2>
-                    <h2>Client: {{ page.client }}</h2>
-                    <p style="margin-top: var(--large-space);">{{ page.description }}</p>
-                    <h3>Challenge</h3>
-                    <p>{{ page.challenge }}</p>
-                    <h3>Result</h3>
-                    <p>{{ page.result }}</p>
-                    <h3>Services</h3>
-                    {% for service in page.services %}
-                    <p>{{ service }}</p>
-                    {% endfor %}
+                    <h1>{{ page.title }}</h1>
+                    <p>Client | {{ page.client }}</p>
+                    {% if page.year %}<p>Year | {{ page.year }}</p>{% endif %}
+                    <p>{% if page.sector %}Sector | {{ page.sector }}{% endif %}</p>
+                    <p>{% if page.link %}Link | <a href="{{ page.link }}">{{ page.link }}</a>{% endif %}</p>
+                    <p style="margin-top: var(--small-space);">{{ page.description }}</p>
+                    <h3>The Brief</h3><p>{{ page.brief }}</p>
+                    <h3>Solution</h3><p>{{ page.solution }}</p>
+                    <h3>Services</h3>{% for service in page.services %}<p>{{ service }}</p>{% endfor %}
+                    {% if page.quote %}<h3>Quote</h3><p>{{ page.quote }}</p>{% endif %}
+                    {% if page.award %}<h3>Award</h3><p>{{ page.award }}</p>{% endif %}
                 </div>
             </div>
         </div>

@@ -1,9 +1,14 @@
+.section {
+    padding: 26pt 14pt;
+}
+
 .statement {
     padding: 49pt 57pt;
     background-color: var(--background-color);
     font-size: 30pt;
     font-weight: unset;
     color: var(--text-color);
+    line-height: 1.5;
 }
 
 .zoom-container {
@@ -25,26 +30,26 @@
 
 .caption {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     top: 8pt;
     left: 8pt;
     color: var(--text-color);
     opacity: 0;
     transition: opacity 0.6s;
+    padding: 2pt;
 }
 
 .zoom-container:hover .caption {
     opacity: 1;
+    background-color: #f9f9f9;
+    border-radius: 1.5pt;
 }
 
 .bottomBorder {
     border-bottom: var(--border-color);
     border-bottom-style: solid;
     border-bottom-width: var(--border-width);
-}
-
-.section {
-    padding-top: 22pt;
-    padding-bottom: 13pt;
 }
 
 .clientGrid {
@@ -73,5 +78,10 @@
 
     .hideWhenSmallScreen {
         display: none;
+    }
+
+    .statement {
+        font-size: 22pt;
+        padding: 49pt 14pt;
     }
 }

@@ -3,6 +3,7 @@ layout: default
 styles:
   - "/assets/css/blogs.css"
 permalink: /about/
+hightlightAbout: "true"
 ---
 <div class="content">
     <div id="Expertise" class="section">
@@ -17,7 +18,7 @@ permalink: /about/
             <div style="display: flex; flex-direction: column;">
                 <h2>Keydesign</h2>
                 <p style="margin-bottom: 35pt;">We specialize in industrial design services. Offering support from the initial concepts to the final design. We've helped startups get to the next level (from humble beginnings to IPO), worked with established companies to innovate and stay ahead of the competition.</p>
-                <h2>Partnet network</h2>
+                <h2>Partner Network</h2>
                 <p>We are committed to help our clients succeed by offering support throughout the entire product development, from the initial concepts to the final product. In collaboration with our partners we can offer additional services beyond industrial design. Our partner network includes experts in mechanical engineering, packaging design, and manufacturing.</p>
             </div>
         </div>

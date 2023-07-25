@@ -6,29 +6,29 @@ permalink: /
 ---
 <div class="content">
     <p id="statement" class="section statement">
-        Committed to creating success through <br class="hideWhenSmallScreen">innovative, beautiful, and empathetic design.
+        Committed to creating success through <br class="hideWhenSmallScreen">innovative, beautiful, and empathetic design
     </p>
-    <div id="work" class="section bottomBorder">
+    <div id="work" class="section bottomBorder" style="padding-top: 0;">
         <div class="wrapper">
         {% assign projects = site.projects | where: "active", true %}
         {% for project in projects %}
         <a href="{{ project.url | prepend: site.baseurl }}">
             <div class="item zoom-container">
                 <img src="{{ project.main_image | prepend: site.baseurl }}" alt="{{ project.title }}: Main image" class="zoom-image">
-                <div class="caption">{{ project.title }}</div>
+                <div class="caption"><span>{{ project.title }}</span><span>{{ project.client }}</span></div>
             </div>
         </a>
         {% endfor %}
         </div>
     </div>
-    <div id="ideas" class="section bottomBorder" style="padding-top: 22pt;">
+    <div id="ideas" class="section bottomBorder">
         <div class="wrapper">
             {% assign ideas = site.ideas | where: "active", true %}
             {% for idea in ideas %}
             <a href="{{ idea.url | prepend: site.baseurl }}">
                 <div class="item zoom-container">
                     <img src="{{ idea.main_image | prepend: site.baseurl }}" alt="{{ idea.title }}: Main image" class="zoom-image">
-                    <div class="caption">{{ idea.title }}</div>
+                <div class="caption"><span>{{ idea.title }}</span><span>{{ idea.client }}</span></div>
                 </div>
             </a>
             {% endfor %}

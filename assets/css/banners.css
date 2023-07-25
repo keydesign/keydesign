@@ -10,7 +10,7 @@
   justify-content: space-between;
   border-bottom: var(--border-color);
   border-bottom-style: solid;
-  border-bottom-width: var(--boder-width);
+  border-bottom-width: var(--border-width);
 }
 
 .companyLogo {
@@ -109,7 +109,6 @@
 .footer-link {
   font-size: 15pt;
   font-weight: 300;
-  text-decoration: none;
   color: var(--background-color);
   margin-top: 35pt;
 }

@@ -3,21 +3,155 @@
 
 <head>
     {% include shared_head.html %}
-    <title>{{ page.title }} | {{ site.title }}</title>
+    <title>{% if page.client %}{{ page.client }} - {% endif %}{{ page.title }} | {{ site.title }}</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/banners.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/wrapper.css">
+    <style>
+        :root {
+            --large-space: 35pt;
+            --small-space: 21pt;
+            --smaller-space: 11pt;
+        }
+
+        .carousel-main-image {
+            width: 100%;
+            height: auto;
+            transition: opacity 0.3s ease-in-out;
+            aspect-ratio: 1.618;
+        }
+
+        .carousel-thumbnails {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 14pt;
+            margin-top: 10px;
+        }
+
+        .carousel-thumbnail {
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s ease-in-out;
+            aspect-ratio: 1.618;
+        }
+
+        .carousel-thumbnail:hover,
+        .carousel-thumbnail.active {
+            opacity: 1;
+        }
+
+        .carousel-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .wrapper {
+            gap: 14pt;
+        }
+
+        a {
+            color: var(--text-color);
+        }
+
+        h1 {
+            font-size: 18pt;
+            margin: 0;
+            margin-bottom: 14pt;
+        }
+
+        h2 {
+            font-weight: 300;
+            font-size: 11pt;
+        }
+
+        h3 {
+            font-weight: 400;
+            font-size: 15pt;
+            margin-top: var(--small-space);
+            margin-bottom: var(--smaller-space);
+        }
+    </style>
 </head>
 
 <body>
     {% include header.html %}
 
     <div class="content">
-        <div class="section">
-            <h1>{{page.title}}</h1>
-            {{ content }}
+        <div class="section" style="padding-top: 57pt; padding-bottom: 22pt; min-height: calc(100svh - 135px)">
+            <div class="wrapper">
+                <div id="carousel" class="carousel-container" style="grid-column: span 1;">
+                    <img class="carousel-main-image" src="{{ page.images[0] | prepend: site.baseurl }}">
+                    <div class="carousel-thumbnails">
+                        {% for image in page.images %}
+                        <div class="carousel-thumbnail{% if forloop.first %} active{% endif %}">
+                            <img src="{{ image | prepend: site.baseurl }}">
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div style="grid-column: span 1;">
+                    <h1>{{ page.title }}</h1>
+                    {{ content }}
+                </div>
+            </div>
         </div>
     </div>
 
     {% include footer.html %}
+
+    <script async>
+        // Variables
+        const mainImage = document.querySelector('.carousel-main-image');
+        const thumbnails = document.querySelectorAll('.carousel-thumbnail');
+        let currentIndex = 0;
+        let interval;
+        // Set initial active thumbnail
+        thumbnails[0].classList.add('active');
+        // Thumbnail click event listeners
+        thumbnails.forEach((thumbnail, index) => {
+            thumbnail.addEventListener('click', () => {
+                updateCarousel(index);
+            });
+        });
+        // Function to update the carousel
+        function updateCarousel(index) {
+            currentIndex = index;
+            mainImage.style.opacity = '0';
+            mainImage.addEventListener('transitionend', () => {
+                mainImage.src = thumbnails[index].querySelector('img').src;
+                mainImage.style.opacity = '1';
+            }, { once: true });
+            removeActiveClass();
+            thumbnails[index].classList.add('active');
+        }
+        // Function to remove active class from all thumbnails
+        function removeActiveClass() {
+            thumbnails.forEach((thumbnail) => {
+                thumbnail.classList.remove('active');
+            });
+        }
+        // Autoscroll on page load
+        interval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % thumbnails.length;
+            updateCarousel(currentIndex);
+        }, 5000);
+        // Stop autoscroll when mouse enters the carousel
+        const carouselContainer = document.querySelector('.carousel-container');
+        carouselContainer.addEventListener('mouseenter', () => {
+            clearInterval(interval);
+        });
+        // Resume autoscroll when mouse leaves the carousel
+        carouselContainer.addEventListener('mouseleave', () => {
+            clearInterval(interval);
+            currentIndex = Array.from(thumbnails).findIndex((thumbnail) =>
+                thumbnail.classList.contains('active')
+            );
+            interval = setInterval(() => {
+                currentIndex = (currentIndex + 1) % thumbnails.length;
+                updateCarousel(currentIndex);
+            }, 5000);
+        });
+    </script>
 </body>
 
 </html>

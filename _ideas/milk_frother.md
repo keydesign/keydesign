@@ -1,19 +1,28 @@
 ---
 layout: project
-active: false
+active: true
 permalink: /milk_frother/
+order: 02
 title: "Milk Frother"
 client:
-description: "An easy-to-use way to add frothy milk to your coffee"
-challenge: "Can there be a good, quick and mess-free frother that goes with the milk of your choice?"
-result: "The user simply fills the frother with milk, stores it in the refrigerator, and can pump it when desired to enjoy their cappuccino or latte. Because this is a new product that does not exist on the market we \"borrowed\" the well-known shape of the milk bottle to help trigger subconscious memories and ease the communication of the product's intent."
+year:
+sector:
+link:
+description: 
+brief: "Our goal was to design a milk frother that combines charm with practicality, ensuring it is easy to use and clean."
+solution: "Inspired by the classic charm of milk bottles, this frother is a great addition to any tableware collection. This frother is designed to be easy to use, clean, and refill."
+quote:
+awards:
 services:
- - "research"
+ - "design research"
  - "ideation"
- - "3D CAD"
-main_image: "/assets/images/ideas/milk_frother/main.jpg"
+ - "innovation"
+ - "user-centered design"
+ - "prototyping"
+ - "3D CAD modeling"
+ - "photorealistic rendering"
+main_image: "/assets/images/ideas/milk_frother/h_i_Milk frother.jpg"
 images:
- - "/assets/images/ideas/milk_frother/01.jpg"
- - "/assets/images/ideas/milk_frother/02.jpg"
- - "/assets/images/ideas/milk_frother/03.jpg"
+ - "/assets/images/ideas/milk_frother/p_i_Milk frother_01.jpg"
+ - "/assets/images/ideas/milk_frother/p_i_Milk frother_02.jpg"
 ---
