@@ -8,7 +8,7 @@ client:
 year:
 sector:
 link:
-description: " "
+description:
 brief: "As fantastic as mobile devices are, there are moments when we simply desire to share a bigger picture with others."
 solution: 'MobiScreen is a portable display that allows you to share your mobile content from any Samsung Galaxy device, no matter where life takes you. Its 27" retractable display fits into a slim, portable housing and opens with a simple button press. With its internal speakers, you can enjoy your content to its fullest.'
 quote:
