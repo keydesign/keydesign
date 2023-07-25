@@ -22,5 +22,5 @@ main_image: "/assets/images/projects/osmo__storage_case/h_w_Osmo.jpg"
 images:
  - "/assets/images/projects/osmo__storage_case/p_w_Osmo_01.jpg"
  - "/assets/images/projects/osmo__storage_case/p_w_Osmo_02.jpg"
- - "/assets/images/projects/osmo__storage_case/p_w_Osmo_03.jpg"
+ - "/assets/images/projects/osmo__storage_case/p_w_Osmo_03 .jpg"
 ---
