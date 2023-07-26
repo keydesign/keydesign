@@ -10,7 +10,7 @@ permalink: /
     </p>
     <div id="work" class="section bottomBorder" style="padding-top: 0;">
         <div class="wrapper">
-        {% assign projects = site.projects | where: "active", true %}
+        {% assign projects = site.projects | where: "active", true | sort: "order" %}
         {% for project in projects %}
         <a href="{{ project.url | prepend: site.baseurl }}">
             <div class="item zoom-container">
@@ -23,7 +23,7 @@ permalink: /
     </div>
     <div id="ideas" class="section bottomBorder">
         <div class="wrapper">
-            {% assign ideas = site.ideas | where: "active", true %}
+            {% assign ideas = site.ideas | where: "active", true | sort: "order" %}
             {% for idea in ideas %}
             <a href="{{ idea.url | prepend: site.baseurl }}">
                 <div class="item zoom-container">

@@ -43,7 +43,8 @@
 .zoom-container:hover .caption {
     opacity: 1;
     background-color: #f9f9f9;
-    border-radius: 1.5pt;
+    padding: 1px 5px;
+    border-radius: 5pt;
 }
 
 .bottomBorder {

@@ -82,7 +82,7 @@
                 </div>
                 <div style="grid-column: span 1;">
                     <h1>{{ page.title }}</h1>
-                    <p>Client | {{ page.client }}</p>
+                    {% if page.client %}<p>Client | {{ page.client }}</p>{% endif %}
                     {% if page.year %}<p>Year | {{ page.year }}</p>{% endif %}
                     <p>{% if page.sector %}Sector | {{ page.sector }}{% endif %}</p>
                     <p>{% if page.link %}Link | <a href="{{ page.link }}">{{ page.link }}</a>{% endif %}</p>
