@@ -8,36 +8,8 @@ permalink: /
     <p id="statement" class="section statement">
         Committed to creating success through <br class="hideWhenSmallScreen">innovative, beautiful, and empathetic design
     </p>
-    <div id="work" class="section bottomBorder" style="padding-top: 0;">
-        <div class="wrapper">
-        {% assign projects = site.projects | sort: "order" %}
-        {% for project in projects %}
-            {% if project.active == true %}
-            <a href="{{ project.url | prepend: site.baseurl }}">
-                <div class="item zoom-container">
-                    <img src="{{ project.main_image | prepend: site.baseurl }}" alt="{{ project.title }}: Main image" class="zoom-image">
-                    <div class="caption"><span>{{ project.title }}</span><span>{{ project.client }}</span></div>
-                </div>
-            </a>
-            {% endif %}
-        {% endfor %}
-        </div>
-    </div>
-    <div id="ideas" class="section bottomBorder">
-        <div class="wrapper">
-            {% assign ideas = site.ideas | sort: "order" %}
-            {% for idea in ideas %}
-                {% if idea.active == true %}
-                <a href="{{ idea.url | prepend: site.baseurl }}">
-                    <div class="item zoom-container">
-                        <img src="{{ idea.main_image | prepend: site.baseurl }}" alt="{{ idea.title }}: Main image" class="zoom-image">
-                    <div class="caption"><span>{{ idea.title }}</span><span>{{ idea.client }}</span></div>
-                    </div>
-                </a>
-                {% endif %}
-            {% endfor %}
-        </div>
-    </div>
+    {% include project_grid.html section_id="work" items=site.projects %}
+    {% include project_grid.html section_id="ideas" items=site.ideas %}
     <div id="clients" class="section" style="padding-bottom: 35pt">
         <div class="clientGrid">
             <div class="item"><img src="{{ site.baseurl }}/assets/images/clients/logo_ActivAngel.jpg"></div>
