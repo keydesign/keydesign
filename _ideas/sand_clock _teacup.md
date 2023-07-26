@@ -25,4 +25,5 @@ main_image: "/assets/images/ideas/sand_clock _teacup/h_i_Tea sand
 timer.jpg"
 images:
 - "/assets/images/ideas/sand_clock _teacup/p_i_Tea sand timer_01.jpg"
+- "/assets/images/ideas/sand_clock _teacup/p_i_Tea sand timer_02.jpg"
 ---

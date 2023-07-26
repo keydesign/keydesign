@@ -27,5 +27,5 @@ images:
  - "/assets/images/projects/puregear__iphone_case/p_w_Puregear_02.jpg"
  - "/assets/images/projects/puregear__iphone_case/p_w_Puregear_03.jpg"
  - "/assets/images/projects/puregear__iphone_case/p_w_Puregear_04.jpg"
- - "/assets/images/projects/puregear__iphone_case/p_w_Puregear_05.jpg"
+ - "/assets/images/projects/puregear__iphone_case/p_w_Puregear_05 .jpg"
 ---
