@@ -17,4 +17,3 @@ collections:
   projects:
     output: true
     permalink: /projects/:title/
-  # exclude: ["assets"]
