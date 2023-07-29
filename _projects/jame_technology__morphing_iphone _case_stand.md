@@ -1,6 +1,6 @@
 ---
 layout: project
-permalink: /jame_technology__morphing_iphone _case_stand/
+permalink: /jame_technology__morphing_iphone_case_stand/
 title: "Transforming Folio Case for iPhone"
 client: "Jame Technology"
 year: 2018
