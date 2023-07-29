@@ -1,18 +1,9 @@
 ---
 layout: project
-active: true
 permalink: /milk_frother/
-order: 02
 title: "Milk Frother"
-client:
-year:
-sector:
-link:
-description: 
 brief: "Our goal was to design a milk frother that combines charm with practicality, ensuring it is easy to use and clean."
 solution: "Inspired by the classic charm of milk bottles, this frother is a great addition to any tableware collection. This frother is designed to be easy to use, clean, and refill."
-quote:
-awards:
 services:
  - "design research"
  - "ideation"

@@ -1,8 +1,6 @@
 ---
 layout: project
-active: true
 permalink: /optari__sol_tote/
-order: 17
 title: "Fashion Handbags for Youth"
 client: "Optari"
 year: 2005
@@ -11,10 +9,9 @@ link: "https://www.instagram.com/optari/"
 description: "Sol Tote Bag is a fun and functional fashion accessory designed for everyday use."
 brief: "Optari asked us to create a tote bag inspired by the popular Crocs shoes, intended as a trendy fashion accessory for girls and young women."
 solution: "The design is visually bold and attention-grabbing, as these bags are intended to make a strong fashion statement. The holes for charms allows for even more expressive and personalized statements of individualized style. The nature of the EVA material makes it brightly colored, durable, waterproof and easy to keep clean - an ideal bag to take wherever life takes you."
-Quote:
+quotes:
 - "Croc Handbags Are A ‘Shoe’-In For 2019’s Weirdest Fashion Trend. - Joyscribe"
 - "This season's must have fashion accessory..."
-awards: 
 services:
 - "ideation"
 - "user-centered design"

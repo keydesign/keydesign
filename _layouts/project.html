@@ -90,7 +90,7 @@
                     <h3>The Brief</h3><p>{{ page.brief }}</p>
                     <h3>Solution</h3><p>{{ page.solution }}</p>
                     <h3>Services</h3>{% for service in page.services %}<p>{{ service }}</p>{% endfor %}
-                    {% if page.quote %}<h3>Quote</h3><p>{{ page.quote }}</p>{% endif %}
+                    {% if page.quotes %}<h3>Quote</h3>{% for quote in page.quotes %}<p>{{ quote }}</p>{% endfor %}{% endif %}
                     {% if page.award %}<h3>Award</h3><p>{{ page.award }}</p>{% endif %}
                 </div>
             </div>

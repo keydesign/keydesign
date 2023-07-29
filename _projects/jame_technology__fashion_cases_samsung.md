@@ -1,8 +1,6 @@
 ---
 layout: project
-active: true
 permalink: /jame_technology__fashion_cases_samsung/
-order: 20
 title: "Fashion Inspired Cases for Samsung"
 client: "Jame Technology"
 year: 2017
@@ -11,8 +9,6 @@ link: "http://www.jamepda.com"
 description: "Fashion-inspired mobile phone cases."
 brief: "Our client wanted trend-inspired fashion cases for the latest Samsung mobile phone."
 solution: "These case designs are influenced by the Fall 2017 fashion trends, skillfully mixing and morphing patterns to craft a captivating, made-up reality. The intricate patterns give rise to new layered forms and unique, morphed animal prints, perfectly aligning with current fashion."
-quote:
-awards:
 services:
 - "design research"
 - "ideation"

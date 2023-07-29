@@ -1,8 +1,6 @@
 ---
 layout: project
-active: true
 permalink: /cesium__rugged_edu_case/
-order: 24
 title: "Protective Case for iPads used in Schools"
 client: "Cesium"
 year: 2018
@@ -11,8 +9,6 @@ link: "https://www.cesiumonline.com/"
 description: "A protective iPad case designed for school-age children, featuring a protective shell and a built-in stand for added functionality."
 brief: "Cesium was seeking a durable tablet case for their education customers for elementary and high school students. The primary requirement was to find a solution that could effectively safeguard the iPads in various school use scenarios."
 solution: "Keydesign developed a rugged and drop-protected solution to meet this demand. The soft silicone inner shell with enlarged corner cushioning ensures the iPad is shielded from impacts when accidentally dropped. Additionally, the hard PC cover allows for easy grip and features a built-in stand, offering convenient angles for writing or reading purposes."
-quote:
-awards:
 services:
 - "design research"
 - "ideation"

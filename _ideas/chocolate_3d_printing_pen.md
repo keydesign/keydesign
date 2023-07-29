@@ -1,18 +1,9 @@
 ---
 layout: project
-active: true
 permalink: /chocolate_3d_printing_pen/
-order: 06
 title: "Chocolate 3D Printing Pen"
-client:
-year:
-sector:
-link:
-description: 
 brief: "Decorating with melted chocolate is a messy process that involves lots of dirty dishes and leave behind unused, wasted chocolate."
 solution: "Inspired by 3D printing pens, this device melts chocolate sticks for easy decorating. Uses only the chocolate you need with no waste, and no need for a big cleanup!"
-quote:
-awards:
 services:
  - "design research"
  - "ideation"

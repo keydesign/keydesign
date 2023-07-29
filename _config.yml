@@ -17,3 +17,39 @@ collections:
   projects:
     output: true
     permalink: /projects/:title/
+idea_order:
+  - sand_clock_teacup
+  - milk_frother
+  - color_me_healthy
+  - samsung_mobile_design_competition
+  - wine_glass_packaging
+  - chocolate_3d_printing_pen
+project_order:
+  - natures_cooling_solutions__eco_thermostat
+  - somnarus__sleep_apnea_monitor
+  - jame_technology__invisible_protection_case_iphone
+  - biophilia__wireless_thermometer
+  - jame_technology__morphing_iphone
+  - golden_trees__solar_lamp_flexible_post
+  - hartmann__luggage
+  - live_copper__smart_desk_woofer
+  - five_stars__point_of_sale_display_gen3
+  - live_copper__smart_desk_model_C
+  - golden_trees__flashlight_nightlight
+  - osmo__storage_case
+  - jame_technology__apple_tv_remote_case
+  - five_stars__point_of_sale_display_gen2
+  - golden_trees__outdoor_solar_lamp
+  - stemp__wireless_thermometer
+  - optari__sol_tote
+  - five_starts__point_of_sale_display_gen1
+  - optari__backpack_handbag
+  - jame_technology__fashion_cases_samsung
+  - patchworks__wallet_case_iphone
+  - tilt_five__packaging
+  - jame_technology__fashion_cases_iphone
+  - cesium__rugged_edu_case
+  - puregear__iphone_case
+  - zuslab__armor_shield_anti_shock_case_iphone
+  - neotop__formula_dispenser
+  - various__trend_research

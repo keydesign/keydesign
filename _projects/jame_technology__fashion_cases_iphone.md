@@ -1,8 +1,6 @@
 ---
 layout: project
-active: true
 permalink: /jame_technology__fashion_cases_iphone/
-order: 23
 title: "Fashion Inspired Cases for iPhone"
 client: "Jame Technology"
 year: 2017-2018
@@ -11,8 +9,6 @@ link: "http://www.jamepda.com"
 description: "Fashion-inspired protective iPhone cases for various target audiences."
 brief: "Our client wanted a variety of trend-inspired fashion and rugged cases designed for the upcoming Apple iPhone."
 solution: "These cases offer varying visual levels of ruggedness, catering to different target audiences, including urban professionals, sports enthusiasts, and military-style aficionados, providing them with a protective yet fashionable identity that resonates with their aesthetic preferences."
-quote:
-awards:
 services:
 - "design research"
 - "ideation"

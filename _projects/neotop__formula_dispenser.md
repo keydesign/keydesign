@@ -1,8 +1,6 @@
 ---
 layout: project
-active: true
 permalink: /neotop__formula_dispenser/
-order: 28
 title: "Accurate, Easy-to-use and Germ-free Universal Dispenser for Infant Formula"
 client: "Neotop"
 year: 2013
@@ -11,7 +9,6 @@ link: "https://www.facebook.com/NeoTopDispenser/"
 description: "Formula dispenser that accurately pre-measures and dispenses one scoop of formula at a time, while safeguarding the remaining formula from outside germs."
 brief: "A neonatology doctor approached us with the idea for a formula dispenser that would eliminate many common issues of exposing the formula to germs. Lack of hygiene is the biggest reason for formula-related mortality in third world countries."
 solution: "This dispenser accurately dispenses one measure of formula at a time, eliminating the need for a scoop and reducing formula exposure to environmental germs. Through extensive research of the baby formula market and other dispenser-related industries, we developed multiple variations and models, resulting in an innovative, accurate, understandable, and intuitive dispenser."
-quote:
 awards: A winner of the 2016 National Parenting Products Awards. https://www.nappaawards.com/product/neotop-baby-formula-dispenser-by-capsforall/
 services:
 - "design research"

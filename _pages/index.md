@@ -8,8 +8,8 @@ permalink: /
     <p id="statement" class="section statement">
         Committed to creating success through <br class="hideWhenSmallScreen">innovative, beautiful, and empathetic design
     </p>
-    {% include project_grid.html section_id="work" items=site.projects %}
-    {% include project_grid.html section_id="ideas" items=site.ideas %}
+    {% include project_grid.html section_id="work" items=site.projects order=site.project_order %}
+    {% include project_grid.html section_id="ideas" items=site.ideas order=site.idea_order %}
     <div id="clients" class="section" style="padding-bottom: 35pt">
         <div class="clientGrid">
             <div class="item"><img src="{{ site.baseurl }}/assets/images/clients/logo_ActivAngel.jpg"></div>

@@ -1,8 +1,6 @@
 ---
 layout: project
-active: true
 permalink: /golden_trees__outdoor_solar_lamp/
-order: 12
 title: "Silicone Solar Lantern: Tabletop or Hanging Adaptability"
 client: "Golden Trees" 
 year: 2016
@@ -11,8 +9,6 @@ link: "http://goldentreestechnology.com/"
 description: "Outdoor, weather-resistant solar light"
 brief:  "Our client, a manufacturer of silicone LED lights, needed an innovative design for a solar powered outdoor lamp."
 solution: "This solar lamp utilizes the flexible nature of silicone, effortlessly transforming between a tabletop option and a hanging lamp. Its design draws inspiration from classic table candle light holders and hanging lanterns, adding a touch of familiarity while embracing modern solar-powered technology."
-quote:
-awards:
 services:
 - "design research"
 - "ideation"

@@ -1,8 +1,6 @@
 ---
 layout: project
-active: true
 permalink: /golden_trees__flashlight_nightlight/
-order: 11
 title: "The Flower Shaped Flashlight"
 client: "Golden Trees" 
 year: 2015
@@ -11,8 +9,6 @@ link: "http://goldentreestechnology.com/"
 description: "An intuitive and user-friendly rechargeable night light designed for kids"
 brief: "Our client wanted an innovative design for a USB charging light for the saturated children's light market."
 solution: 'This approachable and charming night-light and flashlight combo cleverly utilizes the familiar flower and flowerpot association to guide children on its usage. The child "picks the flower," uses it as a flashlight and then "plants" it back in its flowerpot for easy recharging.'
-quote:
-awards:
 services:
 - "design research"
 - "ideation"

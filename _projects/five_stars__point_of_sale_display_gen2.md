@@ -1,8 +1,6 @@
 ---
 layout: project
-active: true
 permalink: /five_stars__point_of_sale_display_gen2/
-order: 14
 title: "Point of Sale Display: Gen 2"
 client: "Fivestars"
 year: 2019
@@ -11,8 +9,6 @@ link: "https://www.fivestars.com/"
 description: "A Point of sale display designed to collect user data, provide repeat-visit loyalty rewards, and offer payment options."
 brief: "Keydesign supported Fivestars, a startup offering loyalty and payment services to small businesses, by designing three generations of POS products as their user base increased, ultimately leading to their acquisition by SumUp. In this second generation, they wanted to offer payment options as a value add to their customers."
 solution: "Fivestars customers were thrilled with the first generation end-user loyalty solution we had designed, but began asking for payment solutions to further support their small business needs, necessitating a upgraded design that seamlessly integrated both aspects. Given that it was a second-generation product for this growing startup, we skillfully incorporated off-the-shelf parts while successfully integrating all requirements, ensuring both usability and fidelity to Fivestars' visual identity."
-quote:
-awards:
 services:
 - "design research"
 - "branding and identity" 

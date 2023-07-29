@@ -1,8 +1,6 @@
 ---
 layout: project
-active: true
 permalink: /zuslab__armor_shield_anti_shock_case_iphone/
-order: 27
 title: "Armor Shield Anti-shock Case for iPhone"
 client: "Zuslab"
 year: 2017
@@ -12,8 +10,6 @@ description: "A sleek, urban rugged protective case for iPhone"
 brief: "Zuslab approached Keydesign to redesign their popular Armor Shield case, to refresh the styling and reduce the cost of the current multi-part construction."
 solution: "Using Zuslab’s visual brand language, Keydesign designed a two-part case with various textures to highlight the functional elements of the rugged design.
 The new design resulted in reduced manufacturing time and lowered material costs."
-quote:
-awards:
 services:
 - "design research"
 - "ideation"

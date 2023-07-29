@@ -1,8 +1,6 @@
 ---
 layout: project
-active: true
 permalink: /optari__backpack_handbag/
-order: 19
 title: "Customizable Backpack and Handbag"
 client: "Optari"
 year: 2006
@@ -11,8 +9,6 @@ link: "https://www.instagram.com/optari/"
 Description: 'Customizable backpack and handbag: playful and eye-catching back-to-school accessories.'
 brief: “After achieving significant market success with our design of the Sol Tote, Optari requested us to create several more products for their brand.” 
 solution: “An EVA front panel transforms a classic backpack into a canvas for customizable play. The small, purse-size crossover is a form factor that allows for playful fashion every day.”
-quote:
-awards:
 Services:
 - "ideation"
 - "user-centered design"
