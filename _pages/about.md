@@ -17,7 +17,7 @@ hightlightAbout: "true"
             </div>
             <div style="display: flex; flex-direction: column;">
                 <h2>Industrial Design</h2>
-                <p style="margin-bottom: 35pt;">We specialize in industrial design services. Offering support from the initial concepts to the final design. We've helped startups get to the next level (from humble beginnings to IPO), worked with established companies to innovate and stay ahead of the competition.</p>
+                <p style="margin-bottom: 35pt;">We specialize in industrial design services, offering support from the initial concepts to the final design. Founded by George and Antonija Campbell in 2001, we've helped startups get to the next level (from humble beginnings to IPO), worked with established companies to innovate and stay ahead of the competition.</p>
                 <h2>Partner Network</h2>
                 <p>We are committed to help our clients succeed by offering support throughout the entire product development, from the initial concepts to the final product. In collaboration with our partners we can offer additional services beyond industrial design. Our partner network includes experts in mechanical engineering, packaging design, and manufacturing.</p>
             </div>
