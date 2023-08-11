@@ -43,7 +43,7 @@ hightlightAbout: "true"
         <div class="wrapper">
             <div></div>
             <div>
-                <h2><a href="{{ site.baseurl }}/blogs/" style="text-decoration: none; color: var(--text-color)">See more...</a></h2>
+                <h2><a href="{{ site.baseurl }}/blogs/" style="text-decoration: none; color: var(--text-color)">See more</a></h2>
             </div>
         </div>
     </div>

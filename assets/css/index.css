@@ -4,11 +4,14 @@
 
 .statement {
     padding: 49pt 57pt;
+    padding-bottom: 23pt;
     background-color: var(--background-color);
+    font-family: Newsreader;
     font-size: 30pt;
     font-weight: unset;
-    color: var(--text-color);
-    line-height: 1.5;
+    /* color: var(--text-color); */
+    color: #333;
+    line-height: 1.3;
 }
 
 .zoom-container {
@@ -38,7 +41,7 @@
     opacity: 0;
     transition: opacity 0.6s;
     padding: 2pt;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9bb;
     padding: 1px 5px;
     border-radius: 5pt;
 }
@@ -84,5 +87,6 @@
     .statement {
         font-size: 22pt;
         padding: 49pt 14pt;
+        padding-bottom: 23pt;
     }
 }

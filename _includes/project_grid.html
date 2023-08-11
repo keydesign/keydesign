@@ -1,4 +1,4 @@
-<div id="{{ include.section_id }}" class="section bottomBorder" style="padding-top: 0;">
+<div id="{{ include.section_id }}" class="section bottomBorder">
     <div class="wrapper">
         {% for item_slug in include.order %}
         {% assign item = include.items | where: "slug", item_slug | first %}

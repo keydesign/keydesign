@@ -1,7 +1,7 @@
 title: Keydesign
 email: hello@keydesign.com
 description: >-
-  TODO
+  Keydesign specializes in industrial design services, offering support from the initial concepts to the final design. Founded by George and Antonija Campbell in 2001, Keydesign has helped startups get to the next level (from humble beginnings to IPO) and worked with established companies to innovate and stay ahead of the competition.
 baseurl: "/keydesign.com"
 url: "http://keydesign.com"
 collections:
@@ -28,7 +28,7 @@ project_order:
   - natures_cooling_solutions__eco_thermostat
   - somnarus__sleep_apnea_monitor
   - jame_technology__invisible_protection_case_iphone
-  - biophilia__wireless_thermometer
+  - biophilia_activangel__wireless_thermometer
   - jame_technology__morphing_iphone_case_stand
   - golden_trees__solar_lamp_flexible_post
   - hartmann__luggage
@@ -42,11 +42,11 @@ project_order:
   - osmo__storage_case
   - stemp__wireless_thermometer
   - optari__sol_tote
-  - five_starts__point_of_sale_display_gen1
+  - five_stars__point_of_sale_display_gen1
   - optari__backpack_handbag
   - jame_technology__fashion_cases_samsung
   - patchworks__wallet_case_iphone
-  - tilt_five__packaging
+  - tilt_five__packaging_design
   - jame_technology__fashion_cases_iphone
   - cesium__rugged_edu_case
   - puregear__iphone_case

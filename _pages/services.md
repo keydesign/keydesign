@@ -27,7 +27,7 @@ hightlightServices: "true"
     }
 </style>
 <div class="content">
-    <div class="hideWhenSmallScreen">
+    <!-- <div class="hideWhenSmallScreen">
         <div id="Banner" class="section" style="padding-top: 92pt; padding-bottom: 23pt;">
             <div class="wrapper">
                 <div class="item" style="background-color: #f9f9f9;"></div>
@@ -35,7 +35,7 @@ hightlightServices: "true"
                 <div class="item" style="background-color: #f9f9f9;"></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div id="PhaseOne" class="section wrapper">
         <div class="hideWhenSmallScreen">
             <div class="imageCollection" style="flex-direction: column-reverse; height: 100%;">

@@ -68,7 +68,7 @@ permalink: /
 
         if (windowOffsetY < 20) {
             // Handle special case when scrolling to the top
-        } else if (documentHeight - windowOffsetY - window.innerHeight <= 20) {
+        } else if (documentHeight - windowOffsetY - window.innerHeight <= 50) {
             // Handle special case when scrolling to the bottom
             isActive[0] = true;
         } else {
