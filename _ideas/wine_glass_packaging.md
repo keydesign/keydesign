@@ -1,6 +1,5 @@
 ---
-layout: project
-permalink: /wine_glass_packaging/
+layout: idea
 title: "Wine Glass Packaging"
 brief: "Charming and distinctive packaging is required for the crystal wine glasses."
 solution: "By employing visual elements to narrate a tale, the box's shape effectively conveys its contents. The box is made from a single piece of cardboard that is folded to offer highly functional support for the wine glasses."
@@ -17,4 +16,5 @@ images:
  - "/assets/images/ideas/wine_glass_packaging/p_i_Wine Glass Packaging_01.jpg"
  - "/assets/images/ideas/wine_glass_packaging/p_i_Wine Glass Packaging_02.jpg"
  - "/assets/images/ideas/wine_glass_packaging/p_i_Wine Glass Packaging_03.jpg"
+permalink: /wine_glass_packaging/
 ---

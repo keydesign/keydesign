@@ -5,3 +5,4 @@ _site
 vendor
 .devcontainer
 Gemfile.lock
+output_md_files

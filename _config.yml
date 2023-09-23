@@ -2,7 +2,7 @@ title: Keydesign
 email: hello@keydesign.com
 description: >-
   Keydesign specializes in industrial design services, offering support from the initial concepts to the final design. Founded by George and Antonija Campbell in 2001, Keydesign has helped startups get to the next level (from humble beginnings to IPO) and worked with established companies to innovate and stay ahead of the competition.
-baseurl: "/keydesign.com"
+# baseurl: "/new2023"
 url: "http://keydesign.com"
 collections:
   blogs:
