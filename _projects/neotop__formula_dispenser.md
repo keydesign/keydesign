@@ -23,5 +23,5 @@ images:
  - "/assets/images/projects/neotop__formula_dispenser/p_w_NeoTop_01.jpg"
  - "/assets/images/projects/neotop__formula_dispenser/p_w_NeoTop_02.jpg"
  - "/assets/images/projects/neotop__formula_dispenser/p_w_NeoTop_03.jpg"
-permalink: /neotop__formula_dispenser/
+
 ---

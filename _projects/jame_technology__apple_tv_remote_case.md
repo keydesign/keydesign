@@ -25,5 +25,5 @@ images:
  - "/assets/images/projects/jame_technology__apple_tv_remote_case/p_w_Apple TV Remote Case_01.jpg"
  - "/assets/images/projects/jame_technology__apple_tv_remote_case/p_w_Apple TV Remote Case_02.jpg"
  - "/assets/images/projects/jame_technology__apple_tv_remote_case/p_w_Apple TV Remote Case_03.jpg"
-permalink: /jame_technology__apple_tv_remote_case/
+
 ---

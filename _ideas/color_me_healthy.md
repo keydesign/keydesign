@@ -15,5 +15,5 @@ main_image: "/assets/images/ideas/color_me_healthy/h_i_ColorMeHealthy.jpg"
 images:
  - "/assets/images/ideas/color_me_healthy/p_i_ColorMeHealthy_01.jpg"
  - "/assets/images/ideas/color_me_healthy/p_i_ColorMeHealthy_02.jpg"
-permalink: /color_me_healthy/
+
 ---

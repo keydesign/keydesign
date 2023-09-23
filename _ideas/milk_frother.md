@@ -15,5 +15,5 @@ main_image: "/assets/images/ideas/milk_frother/h_i_Milk frother.jpg"
 images:
  - "/assets/images/ideas/milk_frother/p_i_Milk frother_01.jpg"
  - "/assets/images/ideas/milk_frother/p_i_Milk frother_02.jpg"
-permalink: /milk_frother/
+
 ---

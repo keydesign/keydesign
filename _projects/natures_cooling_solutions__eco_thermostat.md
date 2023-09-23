@@ -21,5 +21,5 @@ images:
  - "/assets/images/projects/natures_cooling_solutions__eco_thermostat/p_w_NaturesCooling01.jpg"
  - "/assets/images/projects/natures_cooling_solutions__eco_thermostat/p_w_NaturesCooling02.jpg"
  - "/assets/images/projects/natures_cooling_solutions__eco_thermostat/p_w_NaturesCooling03.jpg"
-permalink: /natures_cooling_solutions__eco_thermostat/
+
 ---

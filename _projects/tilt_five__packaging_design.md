@@ -21,5 +21,5 @@ images:
  - "/assets/images/projects/tilt_five__packaging/p_w_TiltFive_01.jpg"
  - "/assets/images/projects/tilt_five__packaging/p_w_TiltFive_02.jpg"
  - "/assets/images/projects/tilt_five__packaging/p_w_TiltFive_03.jpg"
-permalink: /tilt_five__packaging_design/
+
 ---

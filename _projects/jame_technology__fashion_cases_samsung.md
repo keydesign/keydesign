@@ -19,5 +19,5 @@ main_image: "/assets/images/projects/jame_technology__fashion_cases_samsung/h_w_
 images:
  - "/assets/images/projects/jame_technology__fashion_cases_samsung/p_w_Fashion cases for Samsung_01.jpg"
  - "/assets/images/projects/jame_technology__fashion_cases_samsung/p_w_Fashion cases for Samsung_02.jpg"
-permalink: /jame_technology__fashion_cases_samsung/
+
 ---

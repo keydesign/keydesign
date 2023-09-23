@@ -16,5 +16,5 @@ images:
  - "/assets/images/ideas/wine_glass_packaging/p_i_Wine Glass Packaging_01.jpg"
  - "/assets/images/ideas/wine_glass_packaging/p_i_Wine Glass Packaging_02.jpg"
  - "/assets/images/ideas/wine_glass_packaging/p_i_Wine Glass Packaging_03.jpg"
-permalink: /wine_glass_packaging/
+
 ---

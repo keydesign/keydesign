@@ -24,5 +24,5 @@ images:
  - "/assets/images/projects/stemp__wireless_thermometer/p_w_Stemp_01.jpg"
  - "/assets/images/projects/stemp__wireless_thermometer/p_w_Stemp_02.jpg"
  - "/assets/images/projects/stemp__wireless_thermometer/p_w_Stemp_03.jpg"
-permalink: /stemp__wireless_thermometer/
+
 ---

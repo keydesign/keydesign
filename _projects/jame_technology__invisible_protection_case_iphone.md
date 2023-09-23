@@ -25,5 +25,5 @@ images:
  - "/assets/images/projects/jame_technology__invisible_protection_case_iphone/p_w_Invisible protection_03.jpg"
  - "/assets/images/projects/jame_technology__invisible_protection_case_iphone/p_w_Invisible protection_04.jpg"
  - "/assets/images/projects/jame_technology__invisible_protection_case_iphone/p_w_Invisible protection_05.jpg"
-permalink: /jame_technology__invisible_protection_case_iphone/
+
 ---

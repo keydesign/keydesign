@@ -25,5 +25,5 @@ images:
  - "/assets/images/projects/patchworks__wallet_case_iphone/p_w_Wallet Case_01.jpg"
  - "/assets/images/projects/patchworks__wallet_case_iphone/p_w_Wallet Case_02.jpg"
  - "/assets/images/projects/patchworks__wallet_case_iphone/p_w_Wallet Case_03.jpg"
-permalink: /patchworks__wallet_case_iphone/
+
 ---

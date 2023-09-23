@@ -23,5 +23,5 @@ images:
  - "/assets/images/projects/golden_trees__solar_lamp_flexible_post/p_w_flexi solar lamp_01.jpg"
  - "/assets/images/projects/golden_trees__solar_lamp_flexible_post/p_w_flexi solar lamp_02.jpg"
  - "/assets/images/projects/golden_trees__solar_lamp_flexible_post/p_w_flexi solar lamp_03.jpg"
-permalink: /golden_trees__solar_lamp_flexible_post/
+
 ---

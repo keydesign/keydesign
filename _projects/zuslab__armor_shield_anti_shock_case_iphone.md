@@ -25,5 +25,5 @@ images:
  - "/assets/images/projects/zuslab__armor_shield_anti_shock_case_iphone/p_w_Zuslab_02.jpg"
  - "/assets/images/projects/zuslab__armor_shield_anti_shock_case_iphone/p_w_Zuslab_03.jpg"
  - "/assets/images/projects/zuslab__armor_shield_anti_shock_case_iphone/p_w_Zuslab_04.jpg"
-permalink: /zuslab__armor_shield_anti_shock_case_iphone/
+
 ---

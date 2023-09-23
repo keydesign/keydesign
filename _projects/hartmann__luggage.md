@@ -18,5 +18,5 @@ images:
  - "/assets/images/projects/hartmann__luggage/p_w_Hartmann Luggage_01.jpg"
  - "/assets/images/projects/hartmann__luggage/p_w_Hartmann Luggage_02.jpg"
  - "/assets/images/projects/hartmann__luggage/p_w_Hartmann Luggage_03.jpg"
-permalink: /hartmann__luggage/
+
 ---

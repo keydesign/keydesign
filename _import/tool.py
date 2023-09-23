@@ -51,9 +51,6 @@ for index, row in df.iterrows():
                     escaped_item = row[column].replace('"', '\\"')
                     markdown_content[column] = f'{column}: \"{escaped_item}\"\n'
 
-    # Add the dynamically created 'permalink' key-value pair
-    markdown_content['permalink'] = f'permalink: /{id_value}/'
-
     # Create the subfolder if it doesn't exist
     os.makedirs(layout_subfolder, exist_ok=True)
 

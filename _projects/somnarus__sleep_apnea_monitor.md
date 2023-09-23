@@ -23,5 +23,5 @@ images:
  - "/assets/images/projects/somnarus__sleep_apnea_monitor/p_w_Somnarus_01.jpg"
  - "/assets/images/projects/somnarus__sleep_apnea_monitor/p_w_Somnarus_02.jpg"
  - "/assets/images/projects/somnarus__sleep_apnea_monitor/p_w_Somnarus_03.jpg"
-permalink: /somnarus__sleep_apnea_monitor/
+
 ---

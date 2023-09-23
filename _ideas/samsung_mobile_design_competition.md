@@ -15,5 +15,5 @@ main_image: "/assets/images/ideas/samsung_mobile_design_competition/h_i_Samsung 
 images:
  - "/assets/images/ideas/samsung_mobile_design_competition/p_i_Samsung Mobile Design Competition 2019_01.jpg"
  - "/assets/images/ideas/samsung_mobile_design_competition/p_i_Samsung Mobile Design Competition 2019_02.jpg"
-permalink: /samsung_mobile_design_competition/
+
 ---

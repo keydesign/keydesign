@@ -31,5 +31,5 @@ images:
  - "/assets/images/projects/live_copper__smart_desk_woofer/p_w_Smart desk woofer_03.jpg"
  - "/assets/images/projects/live_copper__smart_desk_woofer/p_w_Smart desk woofer_04.jpg"
  - "/assets/images/projects/live_copper__smart_desk_woofer/p_w_Smart desk woofer_05.jpg"
-permalink: /live_copper__smart_desk_woofer/
+
 ---

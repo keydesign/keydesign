@@ -18,5 +18,5 @@ main_image: "/assets/images/projects/various__trend_research/h_w_Trends.jpg"
 images:
  - "/assets/images/projects/various__trend_research/p_w_Trends_01.jpg"
  - "/assets/images/projects/various__trend_research/p_w_Trends_02.jpg"
-permalink: /various__trend_research/
+
 ---

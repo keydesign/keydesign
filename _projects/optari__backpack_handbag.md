@@ -22,5 +22,5 @@ images:
  - "/assets/images/projects/optari__backpack_handbag/p_w_Optari backpack_01.jpg"
  - "/assets/images/projects/optari__backpack_handbag/p_w_Optari backpack_02.jpg"
  - "/assets/images/projects/optari__backpack_handbag/p_w_Optari backpack_03.jpg"
-permalink: /optari__backpack_handbag/
+
 ---

@@ -24,5 +24,5 @@ images:
  - "/assets/images/projects/optari__sol_tote/p_w_Optari_01.jpg"
  - "/assets/images/projects/optari__sol_tote/p_w_Optari_02.jpg"
  - "/assets/images/projects/optari__sol_tote/p_w_Optari_03.jpg"
-permalink: /optari__sol_tote/
+
 ---

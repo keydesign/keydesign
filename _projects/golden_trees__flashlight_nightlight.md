@@ -21,5 +21,5 @@ main_image: "/assets/images/projects/golden_trees__flashlight_nightlight/h_w_flo
 images:
  - "/assets/images/projects/golden_trees__flashlight_nightlight/p_w_flower flashlight_01.jpg"
  - "/assets/images/projects/golden_trees__flashlight_nightlight/p_w_flower flashlight_02.jpg"
-permalink: /golden_trees__flashlight_nightlight/
+
 ---

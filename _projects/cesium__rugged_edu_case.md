@@ -20,5 +20,5 @@ main_image: "/assets/images/projects/cesium__rugged_edu_case/h_w_RuggedEDUcase.j
 images:
  - "/assets/images/projects/cesium__rugged_edu_case/p_w_RuggedEDUcase_01.jpg"
  - "/assets/images/projects/cesium__rugged_edu_case/p_w_RuggedEDUcase_02.jpg"
-permalink: /cesium__rugged_edu_case/
+
 ---

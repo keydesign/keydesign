@@ -19,5 +19,5 @@ images:
  - "/assets/images/projects/golden_trees__outdoor_solar_lamp/p_w_outdoor solar lamp_01.jpg"
  - "/assets/images/projects/golden_trees__outdoor_solar_lamp/p_w_outdoor solar lamp_02.jpg"
  - "/assets/images/projects/golden_trees__outdoor_solar_lamp/p_w_outdoor solar lamp_03.jpg"
-permalink: /golden_trees__outdoor_solar_lamp/
+
 ---

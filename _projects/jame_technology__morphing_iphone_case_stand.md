@@ -26,5 +26,5 @@ images:
  - "/assets/images/projects/jame_technology__morphing_iphone _case_stand/p_w_CaseStarburst_01.jpg"
  - "/assets/images/projects/jame_technology__morphing_iphone _case_stand/p_w_CaseStarburst_02.jpg"
  - "/assets/images/projects/jame_technology__morphing_iphone _case_stand/p_w_CaseStarburst_03.jpg"
-permalink: /jame_technology__morphing_iphone_case_stand/
+
 ---

@@ -12,5 +12,5 @@ main_image: "/assets/images/projects/natures_cooling_solutions/main.gif"
 images:
  - "/assets/images/projects/natures_cooling_solutions/01.jpg"
  - "/assets/images/projects/natures_cooling_solutions/02.jpg"
-permalink: /natures_cooling_solutions/
+
 ---

@@ -12,5 +12,5 @@ main_image: "/assets/images/projects/kingston_corporation__wireless pager/h_w_Wi
 images:
  - "/assets/images/projects/kingston_corporation__wireless pager/p_w_Wireless Pager for Washer and Dryer_01.jpg"
  - "/assets/images/projects/kingston_corporation__wireless pager/p_w_Wireless Pager for Washer and Dryer_02.jpg"
-permalink: /kingston_corporation__wireless pager/
+
 ---

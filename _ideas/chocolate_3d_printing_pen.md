@@ -15,5 +15,5 @@ main_image: "/assets/images/ideas/chocolate_3d_printing_pen/h_i_Chocolate 3D pri
 images:
  - "/assets/images/ideas/chocolate_3d_printing_pen/p_i_Chocolate 3D printing pen_01.jpg"
  - "/assets/images/ideas/chocolate_3d_printing_pen/p_i_Chocolate 3D printing pen_02.jpg"
-permalink: /chocolate_3d_printing_pen/
+
 ---

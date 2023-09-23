@@ -24,5 +24,5 @@ images:
  - "/assets/images/projects/biophilia__wireless_thermometer/p_w_biophilia_02.jpg"
  - "/assets/images/projects/biophilia__wireless_thermometer/p_w_biophilia_03.jpg"
  - "/assets/images/projects/biophilia__wireless_thermometer/p_w_biophilia_04.jpg"
-permalink: /biophilia_activangel__wireless_thermometer/
+
 ---

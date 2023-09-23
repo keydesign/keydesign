@@ -30,5 +30,5 @@ images:
  - "/assets/images/projects/live_copper__smart_desk_model_C/p_w_Smart desk Model C_03.jpg"
  - "/assets/images/projects/live_copper__smart_desk_model_C/p_w_Smart desk Model C_04.jpg"
  - "/assets/images/projects/live_copper__smart_desk_model_C/p_w_Smart desk Model C_05.jpg"
-permalink: /live_copper__smart_desk_model_C/
+
 ---
