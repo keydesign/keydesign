@@ -16,7 +16,7 @@ services:
  - "finish selection (CMF)"
  - "design documentation (tech pack)"
 quotes:
- - "'Croc Handbags Are A ‘Shoe’-In For 2019’s Weirdest Fashion Trend. - Joyscribe'"
+ - "\"Croc Handbags Are A ‘Shoe’-In For 2019’s Weirdest Fashion Trend.\" - Joyscribe"
  - "\"This season's must have fashion accessory...\""
 link: "https://www.instagram.com/optari/"
 main_image: "/assets/images/projects/optari__sol_tote/h_w_Optari.jpg"

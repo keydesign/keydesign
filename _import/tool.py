@@ -19,6 +19,13 @@ for index, row in df.iterrows():
     
     # Extract the 'layout' field from the row
     layout_value = str(row['layout'])
+    
+    # Extract the 'status' field from the row
+    status_value = str(row['status'])
+
+    # Skip rows with status not equal to "active"
+    if status_value != 'active':
+        continue
 
     # Create a subfolder based on the 'layout' value
     layout_subfolder = os.path.join(output_directory, layout_value)
@@ -32,9 +39,9 @@ for index, row in df.iterrows():
     # Add the 'layout' key-value pair to the dictionary
     markdown_content['layout'] = f'layout: {layout_value}\n'
 
-    # Iterate through all fields in the CSV (except 'id' and 'layout') and add them to the dictionary
+    # Iterate through all fields in the CSV (except 'id', 'layout', and 'status') and add them to the dictionary
     for column in df.columns:
-        if column not in ['id', 'layout']:
+        if column not in ['id', 'layout', 'status']:
             # Check if the field is a list enclosed in square brackets
             if isinstance(row[column], str) and re.match(r'\[.*\]', row[column]):
                 # Remove square brackets and split the string into a list

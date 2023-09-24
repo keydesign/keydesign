@@ -7,3 +7,4 @@ vendor
 Gemfile.lock
 output_md_files
 .DS_Store
+input.csv
