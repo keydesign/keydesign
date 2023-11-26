@@ -71,11 +71,11 @@
         <div class="section" style="padding-top: 57pt; padding-bottom: 22pt; min-height: calc(100svh - 135px)">
             <div class="wrapper">
                 <div id="carousel" class="carousel-container" style="grid-column: span 2;">
-                    <img class="carousel-main-image" src="{{ page.images[0] | prepend: site.baseurl }}">
+                    <img class="lazy-load carousel-main-image" src="{{ page.images[0] | prepend: site.baseurl }}">
                     <div class="carousel-thumbnails">
                         {% for image in page.images %}
                         <div class="carousel-thumbnail{% if forloop.first %} active{% endif %}">
-                            <img src="{{ image | prepend: site.baseurl }}">
+                            <img class="lazy-load" src="{{ image | prepend: site.baseurl }}">
                         </div>
                         {% endfor %}
                     </div>
@@ -98,6 +98,7 @@
     </div>
 
     {% include footer.html %}
+    <script src="{{ site.baseurl }}/assets/js/lazy_load.js"></script>
 
     <script async>
         // Variables

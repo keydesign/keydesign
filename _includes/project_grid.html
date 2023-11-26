@@ -3,10 +3,10 @@
         {% for item_slug in include.order %}
         {% assign item = include.items | where: "slug", item_slug | first %}
         {% if item %}
-        <a href="{{ item.url | prepend: site.baseurl }}">
+        <a href="{{ item.url | prepend: site.baseurl }}" style="color: var(--background-color)">
             <div class="item zoom-container">
                 <img src="{{ item.main_image | prepend: site.baseurl }}" alt="{{ item.title }}: Main image"
-                    class="zoom-image">
+                    class="zoom-image lazy-load">
                 <div class="caption"><span>{{ item.title }}</span><span>{{ item.client }}</span></div>
             </div>
         </a>

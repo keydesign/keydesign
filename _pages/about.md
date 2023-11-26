@@ -32,7 +32,7 @@ hightlightAbout: "true"
         {% for blog in blogs limit: 3 %}
         <div class="wrapper" style="margin-bottom: 35pt;">
             <div class="blog-image-wrapper">
-                <img src="{{ blog.main_image | prepend: site.baseurl }}" class="blog-image">
+                <img class="lazy-load" src="{{ blog.main_image | prepend: site.baseurl }}" class="blog-image">
             </div>
             <div>
                 <h2>{{ blog.title }}</h2>

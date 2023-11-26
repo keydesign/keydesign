@@ -12,30 +12,30 @@ permalink: /
     {% include project_grid.html section_id="ideas" items=site.ideas order=site.idea_order %}
     <div id="clients" class="section" style="padding-bottom: 35pt">
         <div class="clientGrid">
-            <div class="item"><img src="{{ site.baseurl }}/assets/images/clients/logo_ActivAngel.jpg"></div>
-            <div class="item"><img src="{{ site.baseurl }}/assets/images/clients/logo_AeroPress.jpg"></div>
-            <div class="item"><img src="{{ site.baseurl }}/assets/images/clients/logo_Fivestars.jpg"></div>
-            <div class="item"><img src="{{ site.baseurl }}/assets/images/clients/logo_FlameKing.jpg"></div>
-            <div class="item"><img src="{{ site.baseurl }}/assets/images/clients/logo_GE.jpg"></div>
-            <div class="item"><img src="{{ site.baseurl }}/assets/images/clients/logo_Golden Trees.jpg"></div>
-            <div class="item"><img src="{{ site.baseurl }}/assets/images/clients/logo_Graco.jpg"></div>
-            <div class="item"><img src="{{ site.baseurl }}/assets/images/clients/logo_Griffin.jpg"></div>
-            <div class="item"><img src="{{ site.baseurl }}/assets/images/clients/logo_Hartmann.jpg"></div>
-            <div class="item"><img src="{{ site.baseurl }}/assets/images/clients/logo_Jame Technology.jpg"></div>
-            <div class="item"><img src="{{ site.baseurl }}/assets/images/clients/logo_Lennox.jpg"></div>
-            <div class="item"><img src="{{ site.baseurl }}/assets/images/clients/logo_Lilly.jpg"></div>
-            <div class="item"><img src="{{ site.baseurl }}/assets/images/clients/logo_LiveCopper.jpg"></div>
-            <div class="item"><img src="{{ site.baseurl }}/assets/images/clients/logo_NaturesCooling.jpg"></div>
-            <div class="item"><img src="{{ site.baseurl }}/assets/images/clients/logo_Neotop.jpg"></div>
-            <div class="item"><img src="{{ site.baseurl }}/assets/images/clients/logo_Newgy.jpg"></div>
-            <div class="item"><img src="{{ site.baseurl }}/assets/images/clients/logo_Optari.jpg"></div>
-            <div class="item"><img src="{{ site.baseurl }}/assets/images/clients/logo_Osmo.jpg"></div>
-            <div class="item"><img src="{{ site.baseurl }}/assets/images/clients/logo_Somnarus.jpg"></div>
-            <div class="item"><img src="{{ site.baseurl }}/assets/images/clients/logo_TiltFive.jpg"></div>
-            <div class="item"><img src="{{ site.baseurl }}/assets/images/clients/logo_Tovbot.jpg"></div>
-            <div class="item"><img src="{{ site.baseurl }}/assets/images/clients/logo_Victorinox.jpg"></div>
-            <div class="item"><img src="{{ site.baseurl }}/assets/images/clients/logo_Zagg.jpg"></div>
-            <div class="item"><img src="{{ site.baseurl }}/assets/images/clients/logo_Zuslab.jpg"></div>
+            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_ActivAngel.jpg"></div>
+            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_AeroPress.jpg"></div>
+            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Fivestars.jpg"></div>
+            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_FlameKing.jpg"></div>
+            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_GE.jpg"></div>
+            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Golden Trees.jpg"></div>
+            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Graco.jpg"></div>
+            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Griffin.jpg"></div>
+            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Hartmann.jpg"></div>
+            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Jame Technology.jpg"></div>
+            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Lennox.jpg"></div>
+            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Lilly.jpg"></div>
+            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_LiveCopper.jpg"></div>
+            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_NaturesCooling.jpg"></div>
+            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Neotop.jpg"></div>
+            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Newgy.jpg"></div>
+            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Optari.jpg"></div>
+            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Osmo.jpg"></div>
+            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Somnarus.jpg"></div>
+            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_TiltFive.jpg"></div>
+            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Tovbot.jpg"></div>
+            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Victorinox.jpg"></div>
+            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Zagg.jpg"></div>
+            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Zuslab.jpg"></div>
         </div>
     </div>
 </div>
