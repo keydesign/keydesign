@@ -49,8 +49,8 @@ hightlightAbout: "true"
         </div>
         <div class="wrapper">
             <div style="display: flex; align-items: center; justify-content: center; gap: 35pt;">
-                <img src="{{ site.baseurl }}/assets/images/george_pfp.png" style="width: 100pt; height: 100pt;">
-                <img src="{{ site.baseurl }}/assets/images/antonija_pfp.jpeg" style="width: 100pt; height: 100pt;">
+                <a href="https://www.linkedin.com/in/keydesign/"><img src="{{ site.baseurl }}/assets/images/george_pfp.png" style="width: 100pt; height: 100pt;"></a>
+                <a href="https://www.linkedin.com/in/antonija-j-campbell/"><img src="{{ site.baseurl }}/assets/images/antonija_pfp.jpeg" style="width: 100pt; height: 100pt;"></a>
             </div>
             <div style="display: flex; flex-direction: column;">
                 <p>Founded in 2001 by husband-and-wife duo George and Antonija, Keydesign is a global industrial design consultancy. Our journey spans continents, from Boston to Nashville, Silicon Valley (Palo Alto), and finally London, infusing creativity, innovation, and human-centricity into every project.</p>
