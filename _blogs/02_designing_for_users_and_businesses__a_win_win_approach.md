@@ -5,7 +5,7 @@ main_image: "/assets/images/blogs/blog2/DesigningForUsersAndBusinesses_00.png"
 images:
     - "/assets/images/blogs/blog2/DesigningForUsersAndBusinesses_01.png"
     - "/assets/images/blogs/blog2/DesigningForUsersAndBusinesses_02.jpg"
-    - "/assets/images/blogs/blog2/DesigningForUsersAndBusinesses_03.jpg"
+    - "/assets/images/blogs/blog2/DesigningForUsersAndBusinesses_03.png"
     - "/assets/images/blogs/blog2/DesigningForUsersAndBusinesses_04.jpg"
 ---
 
