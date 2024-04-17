@@ -70,6 +70,10 @@
             margin-top: var(--small-space);
             margin-bottom: var(--smaller-space);
         }
+
+        p {
+            margin-bottom: var(--smaller-space);
+        }
     </style>
 </head>
 
@@ -91,7 +95,12 @@
                 </div>
                 <div style="grid-column: span 1;">
                     <h1>{{ page.title }}</h1>
-                    {{ content }}
+                    {% assign lines = content | strip_newlines | split: '\n' %}
+                    {% for line in lines %}
+                    {% if line != "" %}
+                    <p>{{ line }}</p>
+                    {% endif %}
+                    {% endfor %}
                 </div>
             </div>
         </div>

@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Install tools if missing
+if ! command -v convert &> /dev/null; then
+    echo "ImageMagick is not installed. Installing..."
+    sudo apt update
+    sudo apt install imagemagick -y
+fi
 # Set the input directory or use the current directory if no argument is provided
 input_dir="${1:-.}"
 
@@ -29,15 +35,15 @@ find "$input_dir" -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg"
     fi
 
     # Get the dimensions of the original image
-    width=$(sips -g pixelWidth "$image" | awk '/pixelWidth:/{print $2}')
-    height=$(sips -g pixelHeight "$image" | awk '/pixelHeight:/{print $2}')
+    width=$(identify -format "%w" "$image")
+    height=$(identify -format "%h" "$image")
 
     # Set the maximum dimension
     max_dimension=100
 
     # Check if the original dimensions are larger than the maximum dimension
     if ((width > max_dimension || height > max_dimension)); then
-        sips -Z $max_dimension "$image" --out "$output_path"
+        convert "$image" -resize "$max_dimension"x"$max_dimension" "$output_path"
     else
         # If the original dimensions are smaller, just copy the original file
         cp -f "$image" "$output_path"
