@@ -55,33 +55,36 @@
             updateCarousel(index);
         });
     });
+
     // Function to update the carousel
     function updateCarousel(index) {
         currentIndex = index;
         mainImage.style.opacity = '0';
-        mainImage.addEventListener('transitionend', () => {
-            mainImage.src = thumbnails[index].querySelector('img').src;
-            mainImage.style.opacity = '1';
-        }, { once: true });
+        mainImage.src = thumbnails[index].querySelector('img').src;
+        mainImage.style.opacity = '1';
         removeActiveClass();
         thumbnails[index].classList.add('active');
     }
+
     // Function to remove active class from all thumbnails
     function removeActiveClass() {
         thumbnails.forEach((thumbnail) => {
             thumbnail.classList.remove('active');
         });
     }
+
     // Autoscroll on page load
     interval = setInterval(() => {
         currentIndex = (currentIndex + 1) % thumbnails.length;
         updateCarousel(currentIndex);
     }, 5000);
+
     // Stop autoscroll when mouse enters the carousel
     const carouselContainer = document.querySelector('.carousel-container');
     carouselContainer.addEventListener('mouseenter', () => {
         clearInterval(interval);
     });
+
     // Resume autoscroll when mouse leaves the carousel
     carouselContainer.addEventListener('mouseleave', () => {
         clearInterval(interval);
