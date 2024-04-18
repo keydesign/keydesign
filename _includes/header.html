@@ -13,8 +13,9 @@
             class="nav-link"  onclick="toggleNavbar(true)">WORK</a>
         <a href="{% if page.url == '/' or page.url == '/index.html' %}#ideas{% else %}{{ site.baseurl }}/#ideas{% endif %}"
             class="nav-link"  onclick="toggleNavbar(true)">IDEAS</a>
-        <a href="{{ site.baseurl }}/about/" class="nav-link {% if page.hightlightAbout %}active{% endif %}"  onclick="toggleNavbar(true)">ABOUT</a>
         <a href="{{ site.baseurl }}/services/" class="nav-link {% if page.hightlightServices %}active{% endif %}"  onclick="toggleNavbar(true)">SERVICES</a>
+        <a href="{{ site.baseurl }}/about/" class="nav-link {% if page.hightlightAbout %}active{% endif %}"  onclick="toggleNavbar(true)">ABOUT</a>
+        <a href="{{ site.baseurl }}/blog/" class="nav-link {% if page.hightlightBlog %}active{% endif %}"  onclick="toggleNavbar(true)">BLOG</a>
         <a href="{% if page.url == '/' or page.url == '/index.html' %}#contact{% else %}{{ site.baseurl }}/#contact{% endif %}"
             class="nav-link"  onclick="toggleNavbar(true)">CONTACT</a>
     </div>
