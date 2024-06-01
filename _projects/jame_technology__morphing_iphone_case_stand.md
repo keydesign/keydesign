@@ -21,7 +21,7 @@ services:
  - "finish selection (CMF)"
  - "design presentation"
 link: "http://www.jamepda.com"
-main_image: "/assets/images/projects/jame_technology__morphing_iphone _case_stand/h_w_CaseStarburst.gif"
+main_image: "/assets/images/projects/jame_technology__morphing_iphone _case_stand/h_w_CaseStarburst.jpg"
 images:
  - "/assets/images/projects/jame_technology__morphing_iphone _case_stand/p_w_CaseStarburst_01.jpg"
  - "/assets/images/projects/jame_technology__morphing_iphone _case_stand/p_w_CaseStarburst_02.jpg"
