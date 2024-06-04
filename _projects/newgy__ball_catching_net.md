@@ -14,11 +14,11 @@ services:
  - "innovation"
  - "3D functional model"
  - "(CMF)"
-main_image: "/assets/images/projects/newgy__ball_catching_net/h_w_newgy"
+main_image: "/assets/images/projects/newgy__ball_catching_net/h_w_newgy.jpg"
 images:
- - "/assets/images/projects/newgy__ball_catching_net/p_w_newgy_01"
- - "/assets/images/projects/newgy__ball_catching_net/p_w_newgy_02"
- - "/assets/images/projects/newgy__ball_catching_net/p_w_newgy_03"
- - "/assets/images/projects/newgy__ball_catching_net/p_w_newgy_04"
+ - "/assets/images/projects/newgy__ball_catching_net/p_w_newgy_01.jpg"
+ - "/assets/images/projects/newgy__ball_catching_net/p_w_newgy_02.jpg"
+ - "/assets/images/projects/newgy__ball_catching_net/p_w_newgy_03.jpg"
+ - "/assets/images/projects/newgy__ball_catching_net/p_w_newgy_04.jpg"
 
 ---

@@ -14,9 +14,9 @@ services:
  - "3D CAD modeling"
  - "surfacing"
  - "(CMF)"
-main_image: "/assets/images/projects/jame_technology__car_mount/h_w_Car Phone Holder"
+main_image: "/assets/images/projects/jame_technology__car_mount/h_w_Car Phone Holder.jpg"
 images:
- - "/assets/images/projects/jame_technology__car_mount/p_w_Car Phone Holder_01"
- - "/assets/images/projects/jame_technology__car_mount/p_w_Car Phone Holder_02"
+ - "/assets/images/projects/jame_technology__car_mount/p_w_Car Phone Holder_01.jpg"
+ - "/assets/images/projects/jame_technology__car_mount/p_w_Car Phone Holder_02.jpg"
 
 ---

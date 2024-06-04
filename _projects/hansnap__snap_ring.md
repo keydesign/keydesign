@@ -17,11 +17,11 @@ services:
  - "design for manufacturing (DFM)"
  - "(CMF)"
  - "design documentation (tech pack)"
-main_image: "/assets/images/projects/hansnap__snap_ring/h_w_hansnap ring"
+main_image: "/assets/images/projects/hansnap__snap_ring/h_w_hansnap ring.jpg"
 images:
- - "/assets/images/projects/hansnap__snap_ring/p_w_hansnap ring_01"
- - "/assets/images/projects/hansnap__snap_ring/p_w_hansnap ring_02"
- - "/assets/images/projects/hansnap__snap_ring/p_w_hansnap ring_03"
- - "/assets/images/projects/hansnap__snap_ring/p_w_hansnap ring_04"
+ - "/assets/images/projects/hansnap__snap_ring/p_w_hansnap ring_01.jpg"
+ - "/assets/images/projects/hansnap__snap_ring/p_w_hansnap ring_02.jpg"
+ - "/assets/images/projects/hansnap__snap_ring/p_w_hansnap ring_03.jpg"
+ - "/assets/images/projects/hansnap__snap_ring/p_w_hansnap ring_04.jpg"
 
 ---

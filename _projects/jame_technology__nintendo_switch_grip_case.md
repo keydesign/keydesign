@@ -13,10 +13,10 @@ services:
  - "ideation"
  - "3D CAD modeling"
  - "(CMF)"
-main_image: "/assets/images/projects/jame_technology__nintendo_switch_grip_case/h_w_Nintendo Switch Grip Case"
+main_image: "/assets/images/projects/jame_technology__nintendo_switch_grip_case/h_w_Nintendo Switch Grip Case.jpg"
 images:
- - "/assets/images/projects/jame_technology__nintendo_switch_grip_case/p_w_Nintendo Switch Grip Case_01"
- - "/assets/images/projects/jame_technology__nintendo_switch_grip_case/p_w_Nintendo Switch Grip Case_02"
- - "/assets/images/projects/jame_technology__nintendo_switch_grip_case/p_w_Nintendo Switch Grip Case_03"
+ - "/assets/images/projects/jame_technology__nintendo_switch_grip_case/p_w_Nintendo Switch Grip Case_01.jpg"
+ - "/assets/images/projects/jame_technology__nintendo_switch_grip_case/p_w_Nintendo Switch Grip Case_02.jpg"
+ - "/assets/images/projects/jame_technology__nintendo_switch_grip_case/p_w_Nintendo Switch Grip Case_03.jpg"
 
 ---
