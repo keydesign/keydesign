@@ -3,7 +3,7 @@
 
 <head>
     {% include shared_head.html %}
-    <title>{% if page.title and page.title != site.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <title>{% if page.title and page.title != site.title and page.title != "Index" %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/banners.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/wrapper.css">
 </head>
