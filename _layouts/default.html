@@ -1,20 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+    <head>
+        {% include shared_head.html %}
+        <title>
+            {% if page.title and page.title != site.title and page.title !=
+            "Index" %}{{ page.title }} | {% endif %}{{ site.title }}
+        </title>
+        <link
+            rel="stylesheet"
+            href="{{ site.baseurl }}/assets/css/banners.css"
+        />
+        <link
+            rel="stylesheet"
+            href="{{ site.baseurl }}/assets/css/wrapper.css"
+        />
+        {% for style in page.styles %}
+        <link rel="stylesheet" href="{{ site.baseurl }}{{style}}" />
+        {% endfor %}
+    </head>
 
-<head>
-    {% include shared_head.html %}
-    <title>{% if page.title and page.title != site.title and page.title != "Index" %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/banners.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/wrapper.css">
-</head>
-
-<body>
-    {% include header.html %}
-
-    {{ content }}
-
-    {% include footer.html %}
-    <script src="{{ site.baseurl }}/assets/js/lazy_load.js"></script>
-</body>
-
+    <body>
+        {% include header.html %} {{ content }} {% include footer.html %}
+        <script src="{{ site.baseurl }}/assets/js/lazy_load.js"></script>
+    </body>
 </html>
