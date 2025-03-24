@@ -1,71 +1,44 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 
-<head>
-    {% include shared_head.html %}
-    <title>{% if page.client %}{{ page.client }} - {% endif %}{{ page.title }} | {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/banners.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/wrapper.css">
-    <style>
-        :root {
-            --large-space: 35pt;
-            --small-space: 21pt;
-            --smaller-space: 11pt;
-        }
-
-        .wrapper {
-            gap: 14pt;
-        }
-
-        a {
-            color: var(--text-color);
-        }
-
-        h1 {
-            font-size: 18pt;
-            margin: 0;
-            margin-bottom: 14pt;
-        }
-
-        h2 {
-            font-weight: 300;
-            font-size: 11pt;
-        }
-
-        h3 {
-            font-weight: 400;
-            font-size: 15pt;
-            margin-top: var(--small-space);
-            margin-bottom: var(--smaller-space);
-        }
-
-        p {
-            margin-bottom: var(--smaller-space);
-        }
-    </style>
-</head>
-
-<body>
-    {% include header.html %}
-
-    <div class="content">
-        <div class="section" style="padding-top: 57pt; padding-bottom: 22pt; min-height: calc(100svh - 135px)">
-            <div class="wrapper">
-                {% include carousel.html %}
-                <div style="grid-column: span 1;">
-                    <h1>{{ page.title }}</h1>
-                    {% assign lines = content | strip_newlines | split: '\n' %}
-                    {% for line in lines %}
-                    {% if line != "" %}
-                    <p>{{ line }}</p>
-                    {% endif %}
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
+<div class="grid grid-1-4-1" style="margin: var(--size-unit-8) 0; gap: 0">
+  <div
+    class="grid-item grid-item-2 grid grid-2"
+    style="gap: calc(2 * var(--size-unit))"
+  >
+    <div class="grid-item grid-item-1-2">
+      <h1>{{ page.title }}</h1>
     </div>
-
-    {% include footer.html %}
-</body>
-
-</html>
+    <div class="grid-item grid-item-1-2 img-container">
+      <img src="{{ page.main_image | prepend: site.baseurl }}" />
+    </div>
+    <div style="height: var(--size-unit)"></div>
+    {% assign lines = content | strip_html | split: '\n\n' | first | inspect |
+    replace: '&quot;', '' | split: '\n\n' %} {% assign half_size = lines.size |
+    divided_by: 2 %} {% assign array1 = lines | slice: 0, half_size %} {% assign
+    array2 = lines | slice: half_size, lines.size %}
+    <div
+      class="grid-item grid-item-1"
+      style="display: flex; flex-direction: column; gap: var(--size-unit-2)"
+    >
+      {% for line in array1 %} {% if line != '' %}
+      <p>{{ line | replace: '\n', ' ' | strip_whitespace }}</p>
+      {% endif %} {% endfor %}
+    </div>
+    <div
+      class="grid-item grid-item-2"
+      style="display: flex; flex-direction: column; gap: var(--size-unit-2)"
+    >
+      {% for line in array2 %} {% if line != '' %}
+      <p>{{ line | replace: '\n', ' ' | strip_whitespace }}</p>
+      {% endif %} {% endfor %}
+    </div>
+    {% assign selected_images = page.images %} {% for image in selected_images
+    %}
+    <div class="grid-item img-container">
+      <img src="{{ image | prepend: site.baseurl }}" />
+    </div>
+    {% endfor %}
+  </div>
+</div>

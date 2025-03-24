@@ -1,32 +1,77 @@
 <div class="navbar">
-    <div style="display: flex; justify-content: space-between; width: 100%;">
-        <a href="{% if page.url == '/' or page.url == '/index.html' %}/{% else %}{{ site.baseurl }}/{% endif %}"
-            class="companyLogo">KEYDESIGN</a>
-        <button class="hamburger" id="hamburgerBtn" onclick="toggleNavbar()">
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-        </button>
+  <div
+    style="
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1440px;
+    "
+  >
+    <div style="display: flex; justify-content: space-between; width: 100%">
+      <a
+        href="{% if page.url == '/' or page.url == '/index.html' %}/{% else %}{{ site.baseurl }}/{% endif %}"
+        class="company-logo"
+      >
+        KEYDESIGN
+      </a>
+      <div class="icon nav-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
     <div class="navbarLinks" id="navbarLinks">
-        <a href="{% if page.url == '/' or page.url == '/index.html' %}#work{% else %}{{ site.baseurl }}/#work{% endif %}"
-            class="nav-link"  onclick="toggleNavbar(true)">WORK</a>
-        <a href="{% if page.url == '/' or page.url == '/index.html' %}#ideas{% else %}{{ site.baseurl }}/#ideas{% endif %}"
-            class="nav-link"  onclick="toggleNavbar(true)">IDEAS</a>
-        <a href="{{ site.baseurl }}/services/" class="nav-link {% if page.hightlightServices %}active{% endif %}"  onclick="toggleNavbar(true)">SERVICES</a>
-        <a href="{{ site.baseurl }}/about/" class="nav-link {% if page.hightlightAbout %}active{% endif %}"  onclick="toggleNavbar(true)">ABOUT</a>
-        <a href="{{ site.baseurl }}/blog/" class="nav-link {% if page.hightlightBlog %}active{% endif %}"  onclick="toggleNavbar(true)">BLOG</a>
-        <a href="{% if page.url == '/' or page.url == '/index.html' %}#contact{% else %}{{ site.baseurl }}/#contact{% endif %}"
-            class="nav-link"  onclick="toggleNavbar(true)">CONTACT</a>
+      <a
+        href="{% if page.url == '/' or page.url == '/index.html' %}#work{% else %}{{ site.baseurl }}/#work{% endif %}"
+        class="nav-link"
+        onclick="toggleNavbar()"
+      >
+        WORK
+      </a>
+      <a
+        href="{% if page.url == '/' or page.url == '/index.html' %}#ideas{% else %}{{ site.baseurl }}/#ideas{% endif %}"
+        class="nav-link"
+        onclick="toggleNavbar()"
+      >
+        IDEAS
+      </a>
+      <a
+        href="{{ site.baseurl }}/services/"
+        class="nav-link {% if page.hightlightServices %}active{% endif %}"
+      >
+        SERVICES
+      </a>
+      <a
+        href="{{ site.baseurl }}/about/"
+        class="nav-link {% if page.hightlightAbout %}active{% endif %}"
+      >
+        ABOUT
+      </a>
+      <a
+        href="{{ site.baseurl }}/blog/"
+        class="nav-link {% if page.hightlightBlog %}active{% endif %}"
+      >
+        BLOG
+      </a>
+      <a
+        href="{% if page.url == '/' or page.url == '/index.html' %}#contact{% else %}{{ site.baseurl }}/#contact{% endif %}"
+        class="nav-link"
+        onclick="toggleNavbar()"
+      >
+        CONTACT
+      </a>
     </div>
-    <script>
-        const navbar = document.querySelector('.navbar');
-        function toggleNavbar (close) {
-            if (close) {
-                navbar.classList.remove('open');
-            } else {
-                navbar.classList.toggle('open');
-            }
-        };
-    </script>
+  </div>
 </div>
+<script>
+  const navbar = document.querySelector(".navbar");
+  const navIcon = document.querySelector(".nav-icon");
+  navIcon.addEventListener("click", (event) => {
+    toggleNavbar();
+  });
+
+  const toggleNavbar = () => {
+    navIcon.classList.toggle("open");
+    navbar.classList.toggle("open");
+  };
+</script>

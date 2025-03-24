@@ -1,113 +1,131 @@
 ---
 layout: default
 styles:
-  - "/assets/css/index.css"
+- "/assets/css/index.css"
 permalink: /
+sponsors:
+- ActivAngel
+- AeroPress
+- Fivestars
+- FlameKing
+- GE
+- Golden Trees
+- Graco
+- Griffin
+- Hartmann
+- Jame Technology
+- Lennox
+- Lilly
+- LiveCopper
+- NaturesCooling
+- Neotop
+- Newgy
+- Optari
+- Osmo
+- Somnarus
+- TiltFive
+- Tovbot
+- Victorinox
+- Zagg
+- Zuslab
 ---
-<div class="content">
-    <p id="statement" class="section statement">
-        Committed to creating success through <br class="hideWhenSmallScreen">innovative, beautiful, and empathetic design
-    </p>
-    {% include project_grid.html section_id="work" items=site.projects order=site.project_order %}
-    {% include project_grid.html section_id="ideas" items=site.ideas order=site.idea_order %}
-    <div id="clients" class="section" style="padding-bottom: 35pt">
-        <div class="clientGrid">
-            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_ActivAngel.jpg"></div>
-            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_AeroPress.jpg"></div>
-            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Fivestars.jpg"></div>
-            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_FlameKing.jpg"></div>
-            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_GE.jpg"></div>
-            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Golden Trees.jpg"></div>
-            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Graco.jpg"></div>
-            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Griffin.jpg"></div>
-            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Hartmann.jpg"></div>
-            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Jame Technology.jpg"></div>
-            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Lennox.jpg"></div>
-            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Lilly.jpg"></div>
-            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_LiveCopper.jpg"></div>
-            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_NaturesCooling.jpg"></div>
-            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Neotop.jpg"></div>
-            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Newgy.jpg"></div>
-            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Optari.jpg"></div>
-            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Osmo.jpg"></div>
-            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Somnarus.jpg"></div>
-            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_TiltFive.jpg"></div>
-            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Tovbot.jpg"></div>
-            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Victorinox.jpg"></div>
-            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Zagg.jpg"></div>
-            <div class="item"><img class="lazy-load" src="{{ site.baseurl }}/assets/images/clients/logo_Zuslab.jpg"></div>
-        </div>
+<div style="height: var(--size-unit-3);"></div>
+{% include project_grid.html section_id="work" items=site.projects order=site.project_order %}
+<span class="separator separator-text">IDEAS</span>
+{% include project_grid.html section_id="ideas" items=site.ideas order=site.idea_order %}
+<span class="separator separator-text">CLIENTS</span>
+<div
+  class="grid"
+  style="grid-template-columns: repeat(12, 1fr); gap: 0; padding-bottom: calc(5 * var(--size-unit));"
+>
+  {% for sponsor in page.sponsors %}
+    <div class="grid-item" style="overflow: hidden; aspect-ratio: 1.6;">
+      <img src="{{ site.baseurl }}/assets/images/clients/{{ sponsor }}.jpg">
     </div>
+  {% endfor %}
 </div>
 
 <script>
-    const revealPoint = window.innerHeight / 2;
-    const sectionMap = {};
-    const documentHeight = Math.max(
-        document.documentElement.scrollHeight,
-        document.documentElement.offsetHeight,
-        document.documentElement.clientHeight
-    );
-    const navLinks = Array.from(document.querySelectorAll(".nav-link")).reverse();
-    const linkCount = navLinks.length;
+  document.addEventListener('DOMContentLoaded', () => {
+    let isAutoScrolling = false;
 
-    // Cache section offsets
-    navLinks.forEach(function (navLink) {
-        const href = navLink.getAttribute("href");
-        if (href && href.startsWith("#")) {
-            const section = document.getElementById(href.slice(1));
-            if (section) {
-                sectionMap[navLink] = section.offsetTop;
-            }
-        }
-    });
+    function getElementHeight(elementId) {
+      if (elementId == 'navbar') return 20;
+      const element = document.getElementById(elementId);
+      if (!element) return 0;
+      return element.offsetHeight;
+    }
 
-    function revealSection() {
-        const isActive = Array(linkCount).fill(false);
-        const windowOffsetY = window.pageYOffset;
+    const sections = [
+      { id: 'navbar', link: document.querySelector('a[href="#navbar"]') },
+      { id: 'work', link: document.querySelector('a[href="#work"]') },
+      { id: 'ideas', link: document.querySelector('a[href="#ideas"]') },
+      { id: 'contact', link: document.querySelector('a[href="#contact"]') },
+    ];
 
-        if (windowOffsetY < 20) {
-            // Handle special case when scrolling to the top
-        } else if (documentHeight - windowOffsetY - window.innerHeight <= 50) {
-            // Handle special case when scrolling to the bottom
-            isActive[0] = true;
+    function updateActiveMenuItem() {
+      if (isAutoScrolling) return;
+      const heights = sections.map(({ id }) => getElementHeight(id));
+      const cumulativeHeights = heights.reduce((acc, height, index) => {
+        acc.push((acc[index - 1] || 0) + height);
+        return acc;
+      }, []);
+      const totalHeight = cumulativeHeights[cumulativeHeights.length - 1];
+      const cumulativePercentages = cumulativeHeights.map((height) => height / totalHeight);
+      const scrollPosition = document.documentElement.scrollTop;
+      const scrollPercentage =
+        scrollPosition / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+      sections.forEach(({ link }, index) => {
+        if (
+          (index === 0 && scrollPercentage < cumulativePercentages[index]) ||
+          (scrollPercentage > cumulativePercentages[index - 1] && scrollPercentage <= cumulativePercentages[index])
+        ) {
+          link?.classList.add('active');
         } else {
-            for (let index = 0; index < linkCount; index++) {
-                const link = navLinks[index];
-                const sectionOffset = sectionMap[link];
-                if (sectionOffset && windowOffsetY > sectionOffset - revealPoint) {
-                    isActive[index] = true;
-                    break;
-                }
-            }
+          link?.classList.remove('active');
         }
+      });
+    }
 
-        navLinks.forEach(function (link, index) {
-            if (isActive[index]) {
-                link.classList.add("active");;
-            } else {
-                link.classList.remove("active");;
-            }
+    window.addEventListener('scroll', updateActiveMenuItem);
+    updateActiveMenuItem();
+
+    const navLinks = Array.from(document.querySelectorAll('.nav-link'));
+    navLinks.forEach((link) => {
+      if (link.href.includes('#')) {
+        link.addEventListener('click', function (event) {
+          event.preventDefault();
+          const target = document.getElementById(link.getAttribute('href').substring(1));
+          if (!target) return;
+          let offsetPosition = target.getBoundingClientRect().top + window.pageYOffset - 64;
+          if (link.getAttribute('href').substring(1) == 'contact')
+            offsetPosition = document.documentElement.scrollHeight;
+          isAutoScrolling = true;
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth',
+          });
+          navLinks.forEach((item) => item.classList.remove('active'));
+          link.classList.add('active');
+          setTimeout(() => {
+            isAutoScrolling = false;
+          }, 1000);
         });
-    }
-
-    function scrollToSection(event) {
-        event.preventDefault();
-        const target = document.getElementById(this.getAttribute("href").substring(1));
-        target.scrollIntoView({ behavior: "smooth" });
-    }
-
-    navLinks.forEach(function (link) {
-        if (link.href.includes('#')) {
-            link.addEventListener("click", function (event) {
-                scrollToSection.call(this, event);
-                navLinks.forEach(function (link) {
-                    link.classList.remove("active");
-                });
-                this.classList.add("active");
-            });
-        }
+      }
     });
 
-    window.addEventListener("scroll", revealSection);
+    const match = window.location.href.match(/\/#([^\/]+)/);
+    if (match) {
+      const target = document.getElementById(match[1]);
+      if (!target) return;
+      let offsetPosition = target.getBoundingClientRect().top + window.pageYOffset - 64;
+      if (match[1] == 'contact') offsetPosition = document.documentElement.scrollHeight;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+      history.replaceState(null, null, '/');
+    }
+  });
 </script>

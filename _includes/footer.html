@@ -1,21 +1,78 @@
-<div id="contact"></div>
-<div class="footer">
-    <div style="display: flex; flex-direction: column;">
-        <span class="footer-text">Planning a new product?<br><i style="font-weight: 100;">Let's</i> talk.</span>
-        <!-- <div style="height: 35pt"></div> -->
-        <a class="footer-link" href="mailto:hello@keydesign.com">Hello@keydesign.com</a>
-        <!-- <div style="height: 35pt"></div> -->
-        <div style="display: flex; column-gap: 22pt;">
-            <a href="https://www.instagram.com/keydesign_ideas/" class="footer-link"><img style="width: 35pt"
-                    src="{{ site.baseurl }}/assets/images/icons/instagram.svg" alt="Instagram"></a>
-            <a href="https://www.linkedin.com/in/antonija-j-campbell/" class="footer-link"><img style="width: 35pt"
-                    src="{{ site.baseurl }}/assets/images/icons/linkedin.svg" alt="LinkedIn"></a>
-        </div>
-    </div>
+<div id="contact" class="footer">
+  <div
+    class="grid"
+    style="
+      width: 100%;
+      max-width: 1440px;
+      padding: calc(13 * var(--size-unit)) var(--size-unit-4);
+      row-gap: var(--size-unit-5);
+      grid-template-columns: repeat(12, 1fr);
+    "
+  >
+    <a
+      href="mailto:hello@keydesign.com"
+      style="grid-column: 2/12; text-decoration: none"
+    >
+      <h1 class="footer-text">
+        Planning a new product?
+        <br />
+        <i style="font-weight: 200">Let's</i>
+        talk.
+      </h1>
+    </a>
+    <a
+      href="mailto:hello@keydesign.com"
+      style="grid-column: 2/12; text-decoration: none"
+      class="footer-link"
+    >
+      <h3 class="footer-link">Hello@keydesign.com</h3>
+    </a>
+    <a
+      href="https://www.instagram.com/keydesign_ideas/"
+      class="footer-link img-container"
+      style="
+        grid-column: 2;
+        width: var(--size-unit-8);
+        height: var(--size-unit-8);
+        border: none;
+      "
+    >
+      <img
+        src="{{ site.baseurl }}/assets/images/icons/instagram.svg"
+        alt="Instagram"
+      />
+    </a>
+    <a
+      href="https://www.linkedin.com/in/antonija-j-campbell/"
+      class="footer-link img-container"
+      style="
+        width: var(--size-unit-8);
+        height: var(--size-unit-8);
+        border: none;
+      "
+    >
+      <img
+        src="{{ site.baseurl }}/assets/images/icons/linkedin.svg"
+        alt="LinkedIn"
+      />
+    </a>
+  </div>
 </div>
 
-{% if page.scripts %}
-{% for script in page.scripts %}
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const contact = document.getElementById("contact");
+    const body = document.body;
+
+    function adjustBodyMargin() {
+      body.style.marginBottom = `${contact.offsetHeight}px`;
+    }
+
+    window.addEventListener("resize", adjustBodyMargin);
+    adjustBodyMargin();
+  });
+</script>
+
+{% if page.scripts %} {% for script in page.scripts %}
 <script src="{{ script | prepend: site.baseurl }}"></script>
-{% endfor %}
-{% endif %}
+{% endfor %} {% endif %}

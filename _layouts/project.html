@@ -1,67 +1,67 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 
-<head>
-    {% include shared_head.html %}
-    <title>{% if page.client %}{{ page.client }} - {% endif %}{{ page.title }} | {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/banners.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/wrapper.css">
-    <style>
-        :root {
-            --large-space: 35pt;
-            --small-space: 21pt;
-            --smaller-space: 11pt;
-        }
-
-        .wrapper {
-            gap: 14pt;
-        }
-
-        a {
-            color: var(--text-color);
-        }
-
-        h1 {
-            margin: 0;
-            margin-bottom: 14pt;
-        }
-
-        h3 {
-            margin-top: var(--small-space);
-            margin-bottom: var(--smaller-space);
-        }
-    </style>
-</head>
-
-<body>
-    {% include header.html %}
-
-    <div class="content">
-        <div class="section" style="padding-top: 57pt; padding-bottom: 22pt; min-height: calc(100svh - 135px)">
-            <div class="wrapper">
-                {% include carousel.html %}
-                <div style="grid-column: span 1;">
-                    <h1>{{ page.title }}</h1>
-                    {% if page.client %}<p>Client | {{ page.client }}</p>{% endif %}
-                    {% if page.year %}<p>Year | {{ page.year }}</p>{% endif %}
-                    <p>{% if page.sector %}Sector | {{ page.sector }}{% endif %}</p>
-                    <p>{% if page.link %}Link | <a href="{{ page.link }}">{{ page.link }}</a>{% endif %}</p>
-                    <p style="margin-top: var(--small-space);">{{ page.description }}</p>
-                    <h3>The Brief</h3>
-                    <p>{{ page.brief }}</p>
-                    <h3>Solution</h3>
-                    <p>{{ page.solution }}</p>
-                    <h3>Services</h3>{% for service in page.services %}<p>{{ service }}</p>{% endfor %}
-                    {% if page.quotes %}<h3>Quote</h3>{% for quote in page.quotes %}<p>{{ quote }}</p>{% endfor %}{%
-                    endif %}
-                    {% if page.award %}<h3>Award</h3>
-                    <p>{{ page.award }}</p>{% endif %}
-                </div>
-            </div>
-        </div>
+<div
+  class="grid"
+  style="
+    margin: calc(8 * var(--size-unit)) 0;
+    grid-template-columns: 1fr 4fr 1fr;
+    gap: 0;
+  "
+>
+  <div
+    class="grid-item grid"
+    style="
+      grid-column: 2;
+      grid-template-columns: repeat(2, 1fr);
+      gap: calc(2 * var(--size-unit));
+    "
+  >
+    <div class="grid-item" style="grid-column: 1/3">
+      <h1>{{ page.title }}</h1>
     </div>
-
-    {% include footer.html %}
-</body>
-
-</html>
+    <div class="grid-item img-container" style="grid-column: 1/3">
+      <img src="{{ page.images[0] | prepend: site.baseurl }}" />
+    </div>
+    {% assign selected_images = page.images | slice: 1, page.images.size %} {%
+    for image in selected_images %}
+    <div class="grid-item img-container">
+      <img src="{{ image | prepend: site.baseurl }}" />
+    </div>
+    {% endfor %}
+    <div style="height: var(--size-unit)"></div>
+    <div class="grid-item" style="grid-column: 1">
+      <p>{{ page.description }}</p>
+    </div>
+    <div class="grid-item" style="grid-column: 2">
+      <p>{{ page.brief }} {{ page.solution }}</p>
+    </div>
+    <span
+      class="separator"
+      style="margin: calc(3 * var(--size-unit)) 0; grid-column: 1/3"
+    ></span>
+    <div class="grid-item" style="grid-column: 1">
+      {% if page.client %}
+      <p>Client | {{ page.client }}</p>
+      {% endif %} {% if page.year %}
+      <p>Year | {{ page.year }}</p>
+      {% endif %} {% if page.sector %}
+      <p>Sector | {{ page.sector }}</p>
+      {% endif %} {% if page.link %}
+      <p>
+        Link |
+        <a href="{{ page.link }}" style="color: var(--color-primary-light)">
+          {{ page.link }}
+        </a>
+      </p>
+      {% endif %}
+    </div>
+    <div class="grid-item" style="grid-column: 2">
+      <p>Services:</p>
+      {% for service in page.services %}
+      <p>{{ service }}</p>
+      {% endfor %}
+    </div>
+  </div>
+</div>
