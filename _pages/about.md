@@ -1,7 +1,5 @@
 ---
 layout: default
-styles:
-  - "/assets/css/blogs.css"
 permalink: /about/
 hightlightAbout: "true"
 ---

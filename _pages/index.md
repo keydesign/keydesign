@@ -1,7 +1,5 @@
 ---
 layout: default
-styles:
-- "/assets/css/index.css"
 permalink: /
 sponsors:
 - ActivAngel

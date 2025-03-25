@@ -6,7 +6,6 @@
       {% if page.title and page.title != site.title and page.title != 'Index' %}
       {{- page.title }} | {% endif %} {{ site.title }}
     </title>
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/wrapper.css" />
     {% for style in page.styles %}
     <link rel="stylesheet" href="{{ site.baseurl }}{{style}}" />
     {% endfor %}

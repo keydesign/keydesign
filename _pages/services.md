@@ -1,7 +1,5 @@
 ---
 layout: default
-styles:
-- "/assets/css/services.css"
 permalink: /services/
 hightlightServices: "true"
 ---
