@@ -26,17 +26,10 @@ hightlightBlog: "true"
         >
       </a>
     </div>
-    <div
-      class="grid-item grid-item-3-blog"
-      style="
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      "
-    >
+    <div class="grid-item grid-item-3-blog">
       <a
         href="{{ blog.url | prepend: site.baseurl }}"
-        style="text-decoration: none; height: 100%; display: flex; align-items: center;"
+        style="text-decoration: none; height: 100%;"
       >
         <div>
           <p style="color: var(--color-primary-dark);">{{ blog.title }}</p>
