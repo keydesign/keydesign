@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: "Designing for Users and Businesses: A Win-Win Approach"
-main_image: "/assets/images/blogs/blog2/DesigningForUsersAndBusinesses_00.png"
+main_image: "/assets/images/blogs/blog2/DesigningForUsersAndBusinesses_00.jpg"
 images:
     - "/assets/images/blogs/blog2/DesigningForUsersAndBusinesses_01.png"
     - "/assets/images/blogs/blog2/DesigningForUsersAndBusinesses_02.jpg"
