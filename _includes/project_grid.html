@@ -1,24 +1,22 @@
-<div id="{{ include.section_id }}">
-  <div class="grid">
-    {% for item_slug in include.order %} {% assign item = include.items | where:
-    'slug', item_slug | first %} {% if item %}
-    <a
-      href="{{ item.url | prepend: site.baseurl }}"
-      class="grid-item img-container zoom-container"
-      style="aspect-ratio: 1.6"
-    >
-      <img
-        src="{{ item.main_image | prepend: site.baseurl }}"
-        alt="{{ item.title }}: Main image"
-      />
-      <div class="caption">
-        <p style="text-align: center; color: var(--color-primary)">
-          {{ item.title }}
-          <br />
-          {{ item.client }}
-        </p>
-      </div>
-    </a>
-    {% endif %} {% endfor %}
-  </div>
+<div class="grid">
+  {% for item_slug in include.order %} {% assign item = include.items | where:
+  'slug', item_slug | first %} {% if item %}
+  <a
+    href="{{ item.url | prepend: site.baseurl }}"
+    class="grid-item img-container zoom-container"
+    style="aspect-ratio: 1.6"
+  >
+    <img
+      src="{{ item.main_image | prepend: site.baseurl }}"
+      alt="{{ item.title }}: Main image"
+    />
+    <div class="caption">
+      <p style="text-align: center; color: var(--color-primary)">
+        {{ item.title }}
+        <br />
+        {{ item.client }}
+      </p>
+    </div>
+  </a>
+  {% endif %} {% endfor %}
 </div>

@@ -27,10 +27,10 @@ sponsors:
 - Zagg
 - Zuslab
 ---
-<div style="height: var(--size-unit-3);"></div>
-{% include project_grid.html section_id="work" items=site.projects order=site.project_order %}
-<span class="separator separator-text">IDEAS</span>
-{% include project_grid.html section_id="ideas" items=site.ideas order=site.idea_order %}
+<div style="height: var(--size-unit-3);" id="work"></div>
+{% include project_grid.html items=site.projects order=site.project_order %}
+<span class="separator separator-text">CONCEPTS</span>
+{% include project_grid.html items=site.ideas order=site.idea_order %}
 <span class="separator separator-text">CLIENTS</span>
 <div
   class="grid"
@@ -48,16 +48,13 @@ sponsors:
     let isAutoScrolling = false;
 
     function getElementHeight(elementId) {
-      if (elementId == 'navbar') return 20;
       const element = document.getElementById(elementId);
       if (!element) return 0;
       return element.offsetHeight;
     }
 
     const sections = [
-      { id: 'navbar', link: document.querySelector('a[href="#navbar"]') },
       { id: 'work', link: document.querySelector('a[href="#work"]') },
-      { id: 'ideas', link: document.querySelector('a[href="#ideas"]') },
       { id: 'contact', link: document.querySelector('a[href="#contact"]') },
     ];
 
