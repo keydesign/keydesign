@@ -4,8 +4,8 @@ title: Quiet Companion / Loud Statement
 cover_image: "/assets/images/blogs/blog1/QuietCompanionLoudStatement_00.jpg"
 main_image: "/assets/images/blogs/blog1/QuietCompanionLoudStatement_01.jpg"
 images:
- - "/assets/images/blogs/blog1/QuietCompanionLoudStatement_01.jpg"
  - "/assets/images/blogs/blog1/QuietCompanionLoudStatement_02.jpg"
+ - "/assets/images/blogs/blog1/QuietCompanionLoudStatement_03.jpg"
 ---
 Every product serves a purpose and tells a story. Its form follows both function and emotion. As designers, we encounter
 an interesting duality between two distinct visual design paths: the "Quiet Companion" and the "Loud Statement." These
