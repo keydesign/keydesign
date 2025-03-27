@@ -19,7 +19,7 @@ hightlightAbout: "true"
         href="https://www.linkedin.com/in/keydesign/"
         class="img-container grid-item"
       >
-        <img src="{{ site.baseurl }}/assets/images/about/george_pfp.png">
+        <img src="{{ site.baseurl }}/assets/images/about/george_pfp.jpg">
       </a>
     </div>
   </div>
