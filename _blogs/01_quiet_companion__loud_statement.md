@@ -1,6 +1,7 @@
 ---
 layout: blog
 title: Quiet Companion / Loud Statement
+cover_image: "/assets/images/blogs/blog1/QuietCompanionLoudStatement_00.jpg"
 main_image: "/assets/images/blogs/blog1/QuietCompanionLoudStatement_00.jpg"
 images:
  - "/assets/images/blogs/blog1/QuietCompanionLoudStatement_01.jpg"

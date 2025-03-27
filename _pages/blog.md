@@ -19,7 +19,7 @@ hightlightBlog: "true"
         class="img-container"
       >
         <img
-          src="{{ blog.main_image | prepend: site.baseurl }}"
+          src="{{ blog.cover_image | prepend: site.baseurl }}"
           style="width: 100%"
         >
       </a>
