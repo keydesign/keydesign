@@ -26,5 +26,6 @@ main_image: "/assets/images/projects/five_stars__point_of_sale_display_gen1/h_w_
 images:
  - "/assets/images/projects/five_stars__point_of_sale_display_gen1/p_w_Point of Sale Display gen1_01.jpg"
  - "/assets/images/projects/five_stars__point_of_sale_display_gen1/p_w_Point of Sale Display gen1_02 .jpg"
+ - "/assets/images/projects/five_stars__point_of_sale_display_gen1/p_w_Point of Sale Display gen1_03 .jpg"
 
 ---
