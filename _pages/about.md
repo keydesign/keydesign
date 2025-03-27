@@ -13,7 +13,7 @@ hightlightAbout: "true"
         href="https://www.linkedin.com/in/antonija-j-campbell/"
         class="img-container grid-item"
       >
-        <img src="{{ site.baseurl }}/assets/images/about/antonija_pfp.jpeg">
+        <img src="{{ site.baseurl }}/assets/images/about/antonija_pfp.jpg">
       </a>
       <a
         href="https://www.linkedin.com/in/keydesign/"

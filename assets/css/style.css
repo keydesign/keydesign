@@ -111,11 +111,7 @@ img {
 }
 
 .company-logo {
-  padding: calc(2.5 * var(--size-unit)) var(--size-unit-4);
-  color: var(--color-primary-dark);
-  font-weight: 800;
-  font-size: calc(2.5 * var(--size-unit));
-  text-decoration: none;
+  padding: var(--size-unit-3) var(--size-unit-4);
 }
 
 .nav-link {

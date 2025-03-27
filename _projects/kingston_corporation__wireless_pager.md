@@ -9,9 +9,9 @@ services:
  - "ideation"
  - "prototyping"
  - "3D CAD"
-main_image: "/assets/images/projects/kingston_corporation__wireless pager/h_w_Wireless Pager for Washer and Dryer.jpg"
+main_image: "/assets/images/projects/kingston_corporation__wireless_pager/h_w_Wireless Pager for Washer and Dryer.jpg"
 images:
- - "/assets/images/projects/kingston_corporation__wireless pager/p_w_Wireless Pager for Washer and Dryer_01.jpg"
- - "/assets/images/projects/kingston_corporation__wireless pager/p_w_Wireless Pager for Washer and Dryer_02.jpg"
+ - "/assets/images/projects/kingston_corporation__wireless_pager/p_w_Wireless Pager for Washer and Dryer_01.jpg"
+ - "/assets/images/projects/kingston_corporation__wireless_pager/p_w_Wireless Pager for Washer and Dryer_02.jpg"
 
 ---
