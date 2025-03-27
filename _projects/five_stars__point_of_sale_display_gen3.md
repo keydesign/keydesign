@@ -27,5 +27,8 @@ images:
  - "/assets/images/projects/five_stars__point_of_sale_display_gen3/p_w_Point of Sale Display gen3_01.jpg"
  - "/assets/images/projects/five_stars__point_of_sale_display_gen3/p_w_Point of Sale Display gen3_02.jpg"
  - "/assets/images/projects/five_stars__point_of_sale_display_gen3/p_w_Point of Sale Display gen3_03.jpg"
+ - "/assets/images/projects/five_stars__point_of_sale_display_gen3/p_w_Point of Sale Display gen3_04.jpg"
+ - "/assets/images/projects/five_stars__point_of_sale_display_gen3/p_w_Point of Sale Display gen3_05.jpg"
+ - "/assets/images/projects/five_stars__point_of_sale_display_gen3/p_w_Point of Sale Display gen3_06.jpg"
 
 ---
