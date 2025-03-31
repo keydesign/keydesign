@@ -12,7 +12,7 @@
         href="{% if page.url == '/' or page.url == '/index.html' %}/{% else %}{{ site.baseurl }}/{% endif %}"
         class="company-logo"
       >
-        <img src="{{ site.baseurl }}/assets/logo.svg" style="height: var(--size-unit-2);" /> 
+        {% include logo.svg %}
       </a>
       <div class="icon nav-icon">
         <span></span>

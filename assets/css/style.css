@@ -112,6 +112,13 @@ img {
 
 .company-logo {
   padding: var(--size-unit-3) var(--size-unit-4);
+  padding-right: 0;
+}
+
+.company-logo svg {
+  fill: var(--color-primary-dark); 
+  height: var(--size-unit-2);
+  width: 100%;
 }
 
 .nav-link {
@@ -312,16 +319,18 @@ img {
     display: inline-block;
     width: var(--size-unit-2);
     height: calc(2.5 * var(--size-unit) - 6px);
-    margin: 0 var(--size-unit-4);
-    margin-top: calc(2.5 * var(--size-unit) + 7px);
+    margin: calc(2.5 * var(--size-unit) + 7px) var(--size-unit-4);
+    /*margin-top: calc(2.5 * var(--size-unit) + 7px);*/
     cursor: pointer;
+    /* fix darkreader color inversion */
+    --darkreader-bg--color-primary-dark: var(--color-background);
   }
 
   .nav-icon span {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #000;
+    background-color: var(--color-primary-dark);
     border-radius: 2px;
     transition: 0.4s;
   }
