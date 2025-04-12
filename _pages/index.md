@@ -33,8 +33,8 @@ sponsors:
 {% include project_grid.html items=site.ideas order=site.idea_order %}
 <span class="separator separator-text">CLIENTS</span>
 <div
-  class="grid"
-  style="grid-template-columns: repeat(12, 1fr); gap: 0; padding-bottom: calc(5 * var(--size-unit));"
+  class="grid grid-12-small"
+  style="gap: 0; padding-bottom: var(--size-unit-5);"
 >
   {% for sponsor in page.sponsors %}
     <div class="grid-item" style="overflow: hidden; aspect-ratio: 1.6;">

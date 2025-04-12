@@ -206,7 +206,8 @@ img {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.grid-12 {
+.grid-12,
+.grid-12-small {
   grid-template-columns: repeat(12, 1fr);
 }
 
@@ -380,6 +381,10 @@ img {
   .grid-1-10-1,
   .grid-1-4-4-1 {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-12-small {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .grid-item,

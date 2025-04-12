@@ -3,7 +3,7 @@ layout: default
 permalink: /about/
 hightlightAbout: "true"
 ---
-<div class="grid grid-1-4-1" style="margin: var(--size-unit-13) 0; gap: 0;">
+<div class="grid grid-1-4-1" style="margin: var(--size-unit-8) 0; gap: 0;">
   <div class="grid-item grid-item-2">
     <div
       style="margin-bottom: var(--size-unit-5);"
