@@ -85,17 +85,15 @@ img {
   box-sizing: border-box;
   max-width: 1440px;
   min-height: 100svh;
-  padding: calc(8 * var(--size-unit)) var(--size-unit-4) 0;
+  padding: var(--size-unit-8) var(--size-unit-4) 0;
 }
 
 .navbar {
   position: fixed;
   top: 0;
-  right: 0;
   left: 0;
+  width: 100%;
   z-index: 10;
-  display: flex;
-  justify-content: center;
   background-color: #ffffffcc;
   border-bottom: var(--color-surface);
   border-bottom-width: 0.5px;
@@ -106,19 +104,17 @@ img {
 .navbarLinks {
   display: flex;
   align-items: center;
-  padding: var(--size-unit-3) var(--size-unit-4);
   column-gap: var(--size-unit-4);
 }
 
 .company-logo {
-  padding: var(--size-unit-3) var(--size-unit-4);
-  padding-right: 0;
+  height: var(--size-unit-2);
+  width: 100%;
+  overflow: hidden;
 }
 
 .company-logo svg {
   fill: var(--color-primary-dark); 
-  height: var(--size-unit-2);
-  width: 100%;
 }
 
 .nav-link {
@@ -155,7 +151,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: calc(100% - (6 * var(--size-unit)));
+  width: calc(100% - var(--size-unit-6));
   height: var(--size-unit-8);
   padding: var(--size-unit);
   background-color: #f9f9f999;
@@ -191,6 +187,13 @@ img {
 
 .footer-link {
   color: #f5f5f5;
+}
+
+.footer-link-img {
+  color: #f5f5f5;
+  width: var(--size-unit-8);
+  height: var(--size-unit-8);
+  border: none;
 }
 
 .grid {
@@ -319,7 +322,7 @@ img {
     display: inline-block;
     width: var(--size-unit-2);
     height: calc(2.5 * var(--size-unit) - 6px);
-    margin: calc(2.5 * var(--size-unit) + 7px) var(--size-unit-4);
+    /* margin: calc(2.5 * var(--size-unit) + 7px) var(--size-unit-4); */
     /*margin-top: calc(2.5 * var(--size-unit) + 7px);*/
     cursor: pointer;
     /* fix darkreader color inversion */
@@ -391,8 +394,15 @@ img {
 /*Mobile*/
 @media only screen and (max-width: 600px) {
   h1 {
-    font-size: var(--size-unit-5);
-    line-height: var(--size-unit-6);
+    font-size: calc(3.5 * var(--size-unit));
+    line-height: var(--size-unit-4);
+  }
+  
+  .footer-link-img {
+    color: #f5f5f5;
+    width: var(--size-unit-6);
+    height: var(--size-unit-6);
+    border: none;
   }
 }
 

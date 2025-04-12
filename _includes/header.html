@@ -1,13 +1,16 @@
-<div class="navbar">
+<div class="navbar wrapper">
   <div
     style="
+      box-sizing: border-box;
       display: flex;
-      justify-content: space-between;
       width: 100%;
       max-width: 1440px;
+      padding: var(--size-unit-3) var(--size-unit-4);
+      justify-content: space-between;
+      row-gap: var(--size-unit-3);
     "
   >
-    <div style="display: flex; justify-content: space-between; width: 100%">
+    <div style="display: flex; justify-content: space-between;">
       <a
         href="{% if page.url == '/' or page.url == '/index.html' %}/{% else %}{{ site.baseurl }}/{% endif %}"
         class="company-logo"
