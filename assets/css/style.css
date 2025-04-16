@@ -94,7 +94,7 @@ img {
   left: 0;
   width: 100%;
   z-index: 10;
-  background-color: #ffffffcc;
+  background-color: #ffffffaa;
   border-bottom: var(--color-surface);
   border-bottom-width: 0.5px;
   border-bottom-style: solid;
