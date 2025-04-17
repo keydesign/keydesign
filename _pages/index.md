@@ -34,11 +34,11 @@ sponsors:
 <span class="separator separator-text">CLIENTS</span>
 <div
   class="grid grid-12-small"
-  style="gap: 0; padding-bottom: var(--size-unit-5);"
+  style="gap: var(--size-unit-2); padding-bottom: var(--size-unit-5);"
 >
   {% for sponsor in page.sponsors %}
     <div class="grid-item" style="overflow: hidden; aspect-ratio: 1.6;">
-      <img src="{{ site.baseurl }}/assets/images/clients/{{ sponsor }}.jpg">
+      <img style="object-fit: contain;" src="{{ site.baseurl }}/assets/images/clients/{{ sponsor }}.jpg">
     </div>
   {% endfor %}
 </div>
