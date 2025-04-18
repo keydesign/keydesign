@@ -39,7 +39,7 @@ sponsors:
 {% include project_grid.html items=site.ideas order=site.idea_order %}
 <span class="separator separator-text">CLIENTS</span>
 <div
-  class="grid grid-10-small"
+  class="grid grid-3-small"
   style="gap: var(--size-unit-2); padding-bottom: var(--size-unit-5);"
 >
   {% for sponsor in page.sponsors %}
