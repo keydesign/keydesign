@@ -43,7 +43,7 @@ sponsors:
   style="gap: var(--size-unit-2); padding-bottom: var(--size-unit-5);"
 >
   {% for sponsor in page.sponsors %}
-    <div class="grid-item" style="overflow: hidden; aspect-ratio: 1.6;">
+    <div class="grid-item" style="overflow: hidden; aspect-ratio: 1.6; overflow: hidden; border: #d9d9d9bb; border-style: solid; border-width: 0.5px; border-radius: 4px;">
       <img style="object-fit: contain;" src="{{ site.baseurl }}/assets/images/clients/{{ sponsor }}.jpg">
     </div>
   {% endfor %}
