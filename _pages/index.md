@@ -4,12 +4,15 @@ permalink: /
 sponsors:
 - ActivAngel
 - AeroPress
+- BluElement
+- Cesium
 - Fivestars
 - FlameKing
 - GE
 - Golden Trees
 - Graco
 - Griffin
+- Hansnap
 - Hartmann
 - Jame Technology
 - Lennox
@@ -20,6 +23,9 @@ sponsors:
 - Newgy
 - Optari
 - Osmo
+- Patchworks
+- Puregear
+- Smartbee
 - Somnarus
 - TiltFive
 - Tovbot
