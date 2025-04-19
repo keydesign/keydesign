@@ -206,6 +206,10 @@ img {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.grid-10-small {
+  grid-template-columns: repeat(10, 1fr);
+}
+
 .grid-12,
 .grid-12-small {
   grid-template-columns: repeat(12, 1fr);
@@ -385,6 +389,10 @@ img {
 
   .grid-12-small {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .grid-10-small {
+    grid-template-columns: repeat(5, 1fr);
   }
 
   .grid-item,
