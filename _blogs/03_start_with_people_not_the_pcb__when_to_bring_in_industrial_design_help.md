@@ -13,7 +13,7 @@ A Hardware Workflow to Consider in Three Steps:
 
 One: Prototype with Flexible Platforms. Start with prototyping tools like Arduino, ESP32, or Raspberry Pi. These platforms allow you to test your electronics and software without locking into a final product shape.
 
-Two: Define the User Experience and Product Form with Industrial Design. Once your electronics and software are functional, bring in an industrial designer to help define the ideal form, ergonomics, and real-world usage scenarios for your product.
+Two: Define the User Experience and Product Form with Industrial Design. Once your electronics and software are functional, engage an industrial designer to shape the product’s form, ergonomics, and user experience.
 
 Three: Design the Custom PCB to fit the form. After the product shape is clearly defined based on user needs, the custom PCB can be designed to fit within that form. This ensures the final product supports both functionality and user comfort.
 
