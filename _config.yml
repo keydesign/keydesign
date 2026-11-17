@@ -24,7 +24,7 @@ idea_order:
   #- samsung_mobile_design_competition
   #- chocolate_3d_printing_pen
 project_order:
-  - jame_technology__apple_tv_remote_case
+  - sleeping_pal__bear_star_light
   - somnarus__sleep_apnea_monitor
   - five_stars__point_of_sale_display_gen3
   - hartmann__luggage
@@ -36,10 +36,11 @@ project_order:
   - live_copper__smart_desk_woofer
   - jame_technology__morphing_iphone_case_stand
   - hansnap__snap_ring
-  - natures_cooling_solutions_eco_breeze
+  - jame_technology__apple_tv_remote_case
   - optari__sol_tote
+  - natures_cooling_solutions__eco_thermostat
+  #- natures_cooling_solutions_eco_breeze
   #- patchworks__wallet_case_iphone
-  #- natures_cooling_solutions__eco_thermostat
   #- five_stars__point_of_sale_display_gen1
   #- five_stars__point_of_sale_display_gen2
   #- golden_trees__flashlight_nightlight
