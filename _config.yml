@@ -18,10 +18,10 @@ collections:
     permalink: /projects/:title/
 idea_order:
   - sand_clock_teacup
-  - milk_frother
   - color_me_healthy
-  - samsung_mobile_design_competition
   - wine_glass_packaging
+  - milk_frother
+  - samsung_mobile_design_competition
   - chocolate_3d_printing_pen
 project_order:
   - jame_technology__apple_tv_remote_case
