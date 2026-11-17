@@ -17,9 +17,9 @@ collections:
     output: true
     permalink: /projects/:title/
 idea_order:
-  - sand_clock_teacup
   - color_me_healthy
   - wine_glass_packaging
+  - sand_clock_teacup
   - milk_frother
   - samsung_mobile_design_competition
   - chocolate_3d_printing_pen
