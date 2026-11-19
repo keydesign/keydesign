@@ -34,8 +34,8 @@ clients:
   - Zuslab
 ---
 
+<div class="anchor-spacer" id="work"></div>
 <span class="hero">
-  <br>
   <b>Industrial Design</b>
   <br>
   Shaped by user needs, business
