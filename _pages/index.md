@@ -2,40 +2,55 @@
 layout: default
 permalink: /
 clients:
-- ActivAngel
-- AeroPress
-- BluElement
-- Cesium
-- Fivestars
-- FlameKing
-- GE
-- Golden Trees
-- Graco
-- Griffin
-- Hansnap
-- Hartmann
-- Jame Technology
-- Lennox
-- Lilly
-- LiveCopper
-- NaturesCooling
-- Neotop
-- Newgy
-- Optari
-- Osmo
-- Patchworks
-- Puregear
-- Smartbee
-- Somnarus
-- TiltFive
-- Tovbot
-- Victorinox
-- Zagg
-- Zuslab
+  - ActivAngel
+  - AeroPress
+  - BluElement
+  - Cesium
+  - Fivestars
+  - FlameKing
+  - GE
+  - Golden Trees
+  - Graco
+  - Griffin
+  - Hansnap
+  - Hartmann
+  - Jame Technology
+  - Lennox
+  - Lilly
+  - LiveCopper
+  - NaturesCooling
+  - Neotop
+  - Newgy
+  - Optari
+  - Osmo
+  - Patchworks
+  - Puregear
+  - Smartbee
+  - Somnarus
+  - TiltFive
+  - Tovbot
+  - Victorinox
+  - Zagg
+  - Zuslab
 ---
-<div style="height: var(--size-unit-3);" id="work"></div>
+
+<span class="hero">
+  <br>
+  <b>Industrial Design</b>
+  <br>
+  Shaped by user needs, business
+  <br>
+  goals, and thoughtful simplicity.
+  <br>
+  <span class="highlight">
+    Turning ideas into products
+    <br>
+    that people want to use.
+  </span>
+</span>
+<div class="anchor-spacer" id="work"></div>
 {% include project_grid.html items=site.projects order=site.project_order %}
-<span class="separator separator-text">CONCEPTS</span>
+<span class="separator separator-text">EXPLORATIONS</span>
 {% include project_grid.html items=site.ideas order=site.idea_order %}
 <span class="separator separator-text">CLIENTS</span>
 <div

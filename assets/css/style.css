@@ -83,9 +83,14 @@ img {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  width: 100%;
   max-width: 1440px;
   min-height: 100svh;
   padding: var(--size-unit-8) var(--size-unit-4) 0;
+}
+
+.anchor-spacer {
+  height: var(--size-unit-3);
 }
 
 .navbar {
@@ -114,7 +119,7 @@ img {
 }
 
 .company-logo svg {
-  fill: var(--color-primary-dark); 
+  fill: var(--color-primary-dark);
 }
 
 .nav-link {
@@ -299,6 +304,13 @@ img {
   color: var(--color-secondary);
 }
 
+.hero {
+  margin-bottom: var(--size-unit-3);
+  color: var(--color-primary-dark);
+  font-size: var(--size-unit-2);
+  line-height: var(--size-unit-3);
+}
+
 /*Tablet*/
 @media only screen and (max-width: 800px) {
   .navbar > div:nth-child(1) {
@@ -410,7 +422,7 @@ img {
     font-size: calc(3.5 * var(--size-unit));
     line-height: var(--size-unit-4);
   }
-  
+
   .footer-link-img {
     color: #f5f5f5;
     width: var(--size-unit-6);
